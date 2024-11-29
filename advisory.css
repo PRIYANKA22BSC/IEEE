@@ -1,0 +1,428 @@
+* {
+    margin:0px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: Poppins;
+  }
+  /*--Navbar css starts--*/
+  #navbar {
+    background-color:rgba(0, 0, 0, 0.212);
+    opacity:90%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+  #namelogo {
+    margin:4vw 0vw 0vw -5vw;
+  }
+  .nav-links {
+    margin-right: 7vw;
+  }
+  .nav-links a {
+    color:#fff;
+    text-decoration: none;
+    padding: 1vw;
+    position: relative;
+    font-size: 18px;
+  }
+  .nav-links a::after {
+    content: "";
+    width: 0;
+    height: 0.3vh;
+    margin-left: 1vw;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #a59132;
+    transition: width 0.3s ease;
+  }
+  .nav-links a:hover::after {
+    content: "";
+    width: 75%;
+    margin-left: 1vw;
+    height: 0.3vh;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #a59132;
+    transition: width 0.3s ease;
+  }
+  .nav-links a.active-link::after {
+    width: 72%;
+    margin-left: 1vw;
+  }
+  button>a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #contact-btn{
+    background-color: transparent;
+    width:10vw;
+    height: 8vh;
+    border: 1px solid #a59132;
+    color:#fff;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right:7vw;
+    font-size: 18px;
+  }
+  #contact-btn:hover {
+    background-color:#a59132;
+    color: white;
+    border-style:none;
+    transition: 1s;
+  }
+  #contact-btn-link {
+    text-decoration: none;
+    color: black;
+  }
+  #menu-icon {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #cross-icon {
+    display: none;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  /*--Navbar css ends--*/
+  /*--first section css start--*/
+  #firstsection{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7));
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #firstsection img{
+    height:100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top:0px;
+    z-index: -1;
+  }
+ /* Animation Target */
+ #firstsection-div {
+    height: 45vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-50px); /* Start above the view */
+    transition: opacity 2s ease, transform 0.8s ease; /* Transition effect */
+  }
+
+  #firstsection-div.visible {
+    opacity: 1; /* Become visible */
+    transform: translateY(0); /* Return to original position */
+  }
+
+  #firstsection-div > h1 {
+    font-size: 6vh;
+    font-weight: 400;
+  }
+
+  #firstsection-div > p {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+       /*--first section css ends--*/
+
+
+
+
+        /*--project section css start--*/
+      #project-heading{
+        text-align: center;
+        margin-top:5vh;
+       
+      }
+      #project-section {
+        background: linear-gradient(to bottom,#6f4518,white);
+        height:85vh;
+        color: white;
+        margin-top:0vh;
+      }
+      #project-outer-container{
+        display: flex;
+        flex-direction:column;
+      }
+      #project-container{
+        height: 70vh;
+        margin:6vh 7vw 0vh 7vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+       
+      }
+      #project-container2{   
+        display:none;
+      }
+      .project{
+        height:60vh;
+        width: 55vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        overflow: hidden;
+      }
+      .project-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px; 
+      }
+      .project-img:hover {
+        transform: scale(1.1);
+      }
+      .project-layer {
+        background: linear-gradient(to bottom, rgba(255, 0, 0, 0),#6f4518);
+        text-align: center;
+        height: 0;
+        width: 100%;
+        margin-top:2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: height 0.5s;
+      }
+      .project:hover .project-layer {
+        height: 100%;
+      }
+      .project-title {
+        margin-top:10vh;
+      }
+      .project-description {
+        padding-left: 2vw;
+        padding-right: 2vw;
+        margin-top:2vh;
+        font-size: 12px;
+      }
+      .project-link {
+        text-decoration: none;
+        color: #a59132;
+        background-color: white;
+        height: 5vh;
+        width: 5vh;
+        margin-top:2vh;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  #see-more-btn {
+    width: 11vw;
+    height: 8vh;
+    margin-top: 2vh;
+    border-style: none;
+    border: 1px solid #a59132;
+    color:#a59132;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    left: 44vw;
+  }
+  #see-more-btn:hover {
+    background-color:#a59132;
+    color: white;
+    border-style:none;
+    transition: 1s;
+  }
+  /*--THE FOLLOWING CSS OF PROJECT SECTION WILL APPLIED ON PROJECT-SECTION WHEN  CLICKED SEEMORE BUTTON---*/
+  
+  #project-section.height{
+    height:170vh;
+    
+  }
+  
+  #project-container2.showmore{
+    height: 72vh;
+    margin: 2vh 7vw 0vh 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  /*--project section css ends--*/
+
+ /* footer css start */
+
+ footer {
+margin-top: 15vh;
+  background-color: #111;
+  color: #fff;
+  height:65vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-between;
+  gap:2vh;
+
+}
+footer>#firstdiv{
+  
+border-bottom: 1px solid #a59132;
+height:15vh;
+width:77vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+#footer-email{
+ padding:2vh 0vh 2vh 1vh;
+ border-radius:5px;
+ border-style: none;
+
+}
+#subscribe-btn{
+  padding:2vh 3vh 2vh 3vh;
+  background-color: #a59132;
+  border-radius:5px;
+  border-style: none;
+  cursor: pointer;
+ }
+footer>#seconddiv{
+  height: 45vh;
+  width:77vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2vh;
+  }
+  #seconddiv-firstchild{
+
+width:35vw;
+display: flex;
+flex-direction: column;
+gap: 2vh;
+  }
+  #icons-container{
+    height: 11vh;
+    width: 20vw;
+   
+  }
+  .social-iconlink > i {
+    font-size:3vh;
+    padding:2vh;
+    margin: 0.6vw;
+    color: white;
+    border:1px solid white;
+    border-radius: 50%;
+    transition: transform 0.5s;
+  }
+  .social-iconlink > i:hover {
+    color: #a59132;
+    transform: translateY(-5px);
+  }
+  #seconddiv-secondchild{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  .footer-links{
+    text-decoration: none;
+    color: white;
+  }
+  .footer-links:hover{
+   color: #a59132;
+  }
+  #seconddiv-thirdchild{
+    width:28vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+  footer>#thirddiv{
+    background-color: #a59132;
+    height:5vh;
+    width:100vw;
+    font-size: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    }
+ 
+/* footer css ends */
+
+    /* Styles for the Scroll-to-Top Button  start*/
+    #scrollToTopBtn {
+      height:8vh;
+      width: 8vh;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #a59132;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: none; /* Initially hidden */
+      transition: opacity 0.3s ease;
+    }
+
+    #scrollToTopBtn:hover {
+      background-color: black;
+    }
+
+    /* Styles for the Scroll-to-Top Button  ends*/
+
+    
+    /* Styles for the Scroll-to-Bottom Button start */
+    #scrollToBottomBtn {
+      height:8vh;
+      width: 8vh;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #a59132;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s ease;
+    }
+
+    #scrollToBottomBtn:hover {
+      background-color: black;
+    }
+    /* Styles for the Scroll-to-Bottom Button ends */
+
+
+
+    
