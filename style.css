@@ -659,7 +659,7 @@ gap: 2vh;
 
   #menu-icon, #cross-icon {
     display: block;
-    margin-right: 5vw;  
+    margin-right:15vw;  
     z-index: 1000;
   }
   #cross-icon {
