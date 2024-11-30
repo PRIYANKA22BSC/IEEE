@@ -620,7 +620,8 @@ gap: 2vh;
   /*-- Navbar section starts --*/
     
   #namelogo {
-  margin-left:1.5vw;
+  margin-left:1vw;
+      margin-top:2vh;
 }
   .nav-links {
     display: none;
