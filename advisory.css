@@ -2,6 +2,7 @@
     margin:0px;
   }
   html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
   }
   body {
