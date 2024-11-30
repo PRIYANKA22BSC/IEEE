@@ -28,7 +28,7 @@
         <a href="research.html">Research</a>
 
       </div>
-      <button id="contact-btn"><a href="#">Contact Us</a></button>
+      <button id="contact-btn"><a href="contact.html">Contact Us</a></button>
       <i class="fa-solid fa-bars"onclick="toggleMenu()" id="menu-icon"></i>
     </nav>
     <!--navbar ends-->
@@ -46,6 +46,37 @@
   </section>
   </section>
     <!--first-section ends-->
+
+
+
+    <!--Services section start-->
+    <section id="service-section">
+      <h2 id="my-service"> Our  Services</h2>
+      <div id="service-container">
+        <div class="services">
+          <i class="fa-solid fa-user" class="service-icon"></i>
+          <h2>Emirr</h2>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, reiciendis a impedit error eaque id in iure sint tenetur, provident non. Ea assumenda, aspernatur nemo eveniet cupiditate unde ipsa incidunt!
+          </p>
+        </div>
+        <div class="services">
+          <i class="fa-solid fa-user" class="service-icon"></i>
+          <h2>Emirr</h2>
+          <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore cupiditate facere, recusandae aut sint reprehenderit maxime illo voluptas enim eveniet culpa ipsa hic! Aspernatur et consequatur, minima molestiae possimus modi.
+          </p>
+        </div>
+        <div class="services">
+          <i class="fa-solid fa-user"></i>
+          <h2>Emirr</h2>
+          <p>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea molestias impedit voluptatibus ipsa doloremque, quia libero exercitationem rem illo consequatur asperiores cupiditate tempore nobis magnam officia hic molestiae ex illum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Services section ends-->
 
 
     <!--contact section start-->
@@ -107,7 +138,7 @@
           class="social-iconlink"
           ><i class="fa-brands fa-youtube"></i
         ></a>
-
+         
         </div>
           </div>
           <div id="seconddiv-secondchild">
@@ -137,6 +168,38 @@
      <!--scroll btn ends-->
 </body>
 <script>
+  /*---active-link js start---*/
+const navLinks = document.querySelectorAll('.nav-links a');
+function setActiveLink(event) {
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+    event.target.classList.add('active-link');
+}
+navLinks.forEach(link => {
+    link.addEventListener('click', setActiveLink);
+});
+/*---active-link js end---*/
+
+
+/*---js start for toggling menu---*/
+
+function toggleMenu(){
+    let navlink=document.querySelector(".nav-links");
+    navlink.classList.toggle('show');
+   }
+
+/*---js end for toggling menu---*/
+
+/*--js for cross-icon starts--*/
+ function cross(){
+    let navlink=document.querySelector(".nav-links");
+    navlink.classList.remove('show');
+ }
+/*--js for cross-icon ends--*/
+
+
+
   /*-- transition js start for contact hero section--*/
 document.addEventListener("DOMContentLoaded", () => {
   const sectionDiv = document.getElementById("firstsection-div");
@@ -147,5 +210,46 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 100); // Delay for smoother effect
 });
 /*-- transition js ends for  contact section --*/
+
+/*--scroll bottom to top btn js start--*/
+ // Select the button
+ const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+ // Show button when scrolled down 200px
+ window.addEventListener('scroll', () => {
+   if (window.scrollY > 200) {
+     scrollToTopBtn.style.display = 'block';
+   } else {
+     scrollToTopBtn.style.display = 'none';
+   }
+ });
+
+ // Scroll to the top when button is clicked
+ scrollToTopBtn.addEventListener('click', () => {
+   window.scrollTo({
+     top: 0,
+     behavior: 'smooth' // Smooth scrolling
+   });
+ });
+/*--scroll bottom to top btn js ends--*/
+
+
+/*--scroll top to bottom  btn js start--*/
+  // Select the button
+  const scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
+
+  // Scroll to the bottom when button is clicked
+  scrollToBottomBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: document.body.scrollHeight, // Scroll to the bottom
+      behavior: 'smooth' // Smooth scrolling
+    });
+  });
+/*--scroll top to bottom btn js ends--*/
+
+
+
+
+
 </script>
 </html>

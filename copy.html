@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        /* Base styles */
+        #contact-section-form,
+        #contact-section-leftdiv {
+            opacity: 0; /* Initially hidden */
+            transform: translateX(0); /* No initial translation */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        /* Left div animation */
+        #contact-section-leftdiv {
+            transform: translateX(-100px); /* Move left initially */
+        }
+
+        /* Right div animation */
+        #contact-section-form {
+            transform: translateX(100px); /* Move right initially */
+        }
+
+        /* Active state when visible */
+        .active {
+            opacity: 1;
+            transform: translateX(0); /* Reset to default position */
+        }
+
+        /* Basic styling for visuals */
+        body {
+            height: 200vh; /* Increase height for scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #contact-section-leftdiv,
+        #contact-section-form {
+            background: lightblue;
+            padding: 20px;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contact-section-leftdiv">Hello Left Div</div>
+    <div id="contact-section-form">Hello Right Div</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll("#contact-section-leftdiv, #contact-section-form");
+
+            const handleScroll = () => {
+                elements.forEach((element) => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                        element.classList.add("active");
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", handleScroll);
+
+            // Initial check in case elements are in view on load
+            handleScroll();
+        });
+    </script>
+</body>
+</html>

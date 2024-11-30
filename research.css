@@ -1,0 +1,404 @@
+* {
+    margin:0px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: Poppins;
+  }
+  /*--Navbar css starts--*/
+  #navbar {
+    background-color:rgba(0, 0, 0, 0.212);
+    opacity:90%;
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+  #namelogo {
+    margin:4vw 0vw 0vw -5vw;
+  }
+  .nav-links {
+    margin-right: 7vw;
+  }
+  .nav-links a {
+    color:#fff;
+    text-decoration: none;
+    padding: 1vw;
+    position: relative;
+    font-size: 18px;
+  }
+  .nav-links a::after {
+    content: "";
+    width: 0;
+    height: 0.3vh;
+    margin-left: 1vw;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #a59132;
+    transition: width 0.3s ease;
+  }
+  .nav-links a:hover::after {
+    content: "";
+    width: 75%;
+    margin-left: 1vw;
+    height: 0.3vh;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #a59132;
+    transition: width 0.3s ease;
+  }
+  .nav-links a.active-link::after {
+    width: 72%;
+    margin-left: 1vw;
+  }
+  button>a{
+    text-decoration: none;
+    color: #fff;
+  }
+  #contact-btn{
+    background-color: transparent;
+    width:10vw;
+    height: 8vh;
+    border: 1px solid #a59132;
+    color:#fff;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right:7vw;
+    font-size: 18px;
+  }
+  #contact-btn:hover {
+    background-color:#a59132;
+    color: white;
+    border-style:none;
+    transition: 1s;
+  }
+  #contact-btn-link {
+    text-decoration: none;
+    color: black;
+  }
+  #menu-icon {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  #cross-icon {
+    display: none;
+    color: white;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  /*--Navbar css ends--*/
+  /*--first section css start--*/
+  #firstsection{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7));
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #firstsection img{
+    height:100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top:0px;
+    z-index: -1;
+  }
+ /* Animation Target */
+ #firstsection-div {
+    height: 45vh;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-50px); /* Start above the view */
+    transition: opacity 2s ease, transform 0.8s ease; /* Transition effect */
+  }
+
+  #firstsection-div.visible {
+    opacity: 1; /* Become visible */
+    transform: translateY(0); /* Return to original position */
+  }
+
+  #firstsection-div > h1 {
+    font-size: 6vh;
+    font-weight: 400;
+  }
+
+  #firstsection-div > p {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+       /*--first section css ends--*/
+
+       /*--second section css starts--*/
+      /*--first section css starts--*/
+#secondsection {
+  background: linear-gradient(to top,white,#6f4518);
+ display: flex;
+ flex-direction: row;
+ justify-content:space-between;
+ gap:2vw;
+height:100vh;
+}
+#secondsection-leftdiv {
+  color:white;
+  width:45vw;
+  height:65vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7vw;
+  margin-top: 13vh;
+  position:relative;
+  top: 10vh;
+}
+#secondsection-leftdiv>h2 {
+
+  
+  margin-top: 2vh;
+}
+#secondsection-leftdiv>p{
+  margin-top:5vh;
+ }
+
+
+#secondsection-rightdiv{
+ color: white;
+  display:block;
+  width:45vw;
+  height:65vh;
+  margin-right:7vw;
+  margin-top:13vh;
+  position:relative;
+  top: 10vh;
+}
+#secondsection-rightdiv>img {
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+/*--first section css ends--*/
+
+       /*--second section css ends--*/
+
+       /*--about section css starts--*/
+       /*--about section css starts--*/
+/*-#about-me {
+  text-align: center;
+  margin-top: 5vh;
+  color:white;
+  font-weight: 400;
+}-*/
+#about-section {
+  background: linear-gradient(to top,#6f4518,rgba(255, 255, 255, 0.342));
+  height:100vh;
+  border-bottom: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+ gap: 2vw;
+}
+#aboutsection-leftdiv {
+ 
+  color:black;
+  width:45vw;
+  height:65vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7vw;
+  margin-top: 13vh;
+  position:relative;
+  top: 10vh;
+}
+#aboutsection-leftdiv>img {
+  height:100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+#aboutsection-rightdiv{
+  color: white;
+  display:block;
+  width:45vw;
+  height:65vh;
+  margin-right:7vw;
+  margin-top:13vh;
+  position:relative;
+  top: 10vh;
+}
+#aboutsection-rightdiv>h2{
+  margin-top:5vh;
+ }
+
+#aboutsection-rightdiv>p{
+ margin-top:5vh;
+}
+/*--about section css ends--*/
+       /*--about section css ends--*/
+     /* footer css start */
+ footer {
+      background-color: #111;
+      color: #fff;
+      height:65vmin;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content:space-between;
+      gap:2vh;
+    }
+    footer>#firstdiv{
+    border-bottom: 1px solid #a59132;
+    height:15vh;
+    width:77vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    #footer-email{
+     padding:2vh 0vh 2vh 1vh;
+     border-radius:5px;
+     border-style: none;
+    
+    }
+    #subscribe-btn{
+      padding:2vh 3vh 2vh 3vh;
+      background-color: #a59132;
+      border-radius:5px;
+      border-style: none;
+      cursor: pointer;
+     }
+    footer>#seconddiv{
+      height: 45vh;
+      width:77vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2vh;
+      }
+      #seconddiv-firstchild{
+    
+    width:35vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+      }
+      #icons-container{
+        height: 11vh;
+        width: 20vw;
+       
+      }
+      .social-iconlink > i {
+        font-size:3vh;
+        padding:2vh;
+        margin: 0.6vw;
+        color: white;
+        border:1px solid white;
+        border-radius: 50%;
+        transition: transform 0.5s;
+      }
+      .social-iconlink > i:hover {
+        color: #a59132;
+        transform: translateY(-5px);
+      }
+      #seconddiv-secondchild{
+        width: 10vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+      .footer-links{
+        text-decoration: none;
+        color: white;
+      }
+      .footer-links:hover{
+       color: #a59132;
+      }
+      #seconddiv-thirdchild{
+        width:28vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+      footer>#thirddiv{
+        background-color: #a59132;
+        height:5vh;
+        width:100vw;
+        font-size: 12px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        }
+     
+    /* footer css ends */
+    
+        /* Styles for the Scroll-to-Top Button  start*/
+        #scrollToTopBtn {
+          height:8vh;
+          width: 8vh;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #a59132;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          text-align: center;
+          font-size: 16px;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          display: none; /* Initially hidden */
+          transition: opacity 0.3s ease;
+        }
+    
+        #scrollToTopBtn:hover {
+          background-color: black;
+        }
+    
+        /* Styles for the Scroll-to-Top Button  ends*/
+    
+        
+        /* Styles for the Scroll-to-Bottom Button start */
+        #scrollToBottomBtn {
+          height:8vh;
+          width: 8vh;
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          background-color: #a59132;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          text-align: center;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          transition: opacity 0.3s ease;
+        }
+    
+        #scrollToBottomBtn:hover {
+          background-color: black;
+        }
+        /* Styles for the Scroll-to-Bottom Button ends */
+    
+    
+    
+        

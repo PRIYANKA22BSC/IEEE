@@ -148,10 +148,59 @@
        /*--first section css ends--*/
 
 
+/*--Services section css start--*/
+
+#my-service {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+}
+
+#service-section {
+  height:75vh;
+  background: linear-gradient(to bottom,#6f4518,white);
+}
+#service-container {
+
+  height: 75vh;
+  margin: 0vh 7vw 0vh 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services {
+  height: 55vh;
+  width: 45vh;
+  font-size: 14px;
+  background-color:#111111a9;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.services:hover {
+  background-color: #6f4518;
+  transform: translateY(-7px);
+}
+.services>i {
+  font-size: 8vh;
+}
+/*--Services section css ends--*/
+
+
 /*--Contact section css start--*/
 #contact-outer-section{
+ background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7)),url("images/background.jpg");
 display: flex;
 flex-direction: column;
+margin-top: 5vh;
 }
 #contact-outer-section>h2{
  text-align: center;
@@ -173,7 +222,7 @@ flex-direction: column;
   #contact-section-form {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     border-radius:10px;
-    height: 70vh;
+    height: 75vh;
     width: 45vw;
     margin-right:7vw;
     margin-top:10vh;
@@ -188,13 +237,13 @@ flex-direction: column;
     align-items: flex-start;
     padding-left: 2vh;
     border-radius: 10px;
-    height: 70vh;
+    height: 75vh;
     width:45vw;
     margin-top:10vh;
     margin-left:7vw;
   }
   #let-connect {
-    margin-top: 9vh;
+    margin-top:7vh;
     font-size:25px;
     color:white;
   }
@@ -207,6 +256,7 @@ flex-direction: column;
     height: 5vh;
   }
   .email {
+  
     margin-top: 2vh;
     color:white;
   }
@@ -226,24 +276,27 @@ flex-direction: column;
     transform: translateY(-5px);
   }
   #form {
-    color: #6c757d;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: left;
     margin-top: 6vh;
   }
   #form input {
+   background-color:transparent;
+   color: white;
     padding: 2.5vh 0 2.5vh 1vh;
-    margin-top: 4vh;
+    margin-top:2vh;
     border-radius: 3px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    color: white;
     font-size: 14px;
     border: none;
     outline: none;
   }
   #form textarea {
+  
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: transparent;
     color: white;
     border-radius: 3px;
     margin-top: 4vh;
@@ -253,6 +306,7 @@ flex-direction: column;
     outline: none;
   }
   #submit-btn {
+    background-color: #11111183;
     width: 11vw;
     height: 8vh;
     margin-top: 4vh;
@@ -267,108 +321,110 @@ flex-direction: column;
     background-color: #a59132;
   }
   /*--Contact section css ends--*/
+/* footer css start */
 
-  /* footer css start */
+footer {
 
- footer {
-   
-      background-color: #111;
-      color: #fff;
-      height:65vmin;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content:space-between;
-      gap:2vh;
+    background-color: #111;
+    color: #fff;
+    height:65vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    gap:2vh;
+  
+  }
+  footer>#firstdiv{
     
-    }
-    footer>#firstdiv{
-      
-    border-bottom: 1px solid #a59132;
-    height:15vh;
+  border-bottom: 1px solid #a59132;
+  height:15vh;
+  width:77vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+  }
+  #footer-email{
+   padding:2vh 0vh 2vh 1vh;
+   border-radius:5px;
+   border-style: none;
+  
+  }
+  #subscribe-btn{
+    padding:2vh 3vh 2vh 3vh;
+    background-color: #a59132;
+    border-radius:5px;
+    border-style: none;
+    cursor: pointer;
+   }
+  footer>#seconddiv{
+    height: 45vh;
     width:77vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    
-    }
-    #footer-email{
-     padding:2vh 0vh 2vh 1vh;
-     border-radius:5px;
-     border-style: none;
-    
-    }
-    #subscribe-btn{
-      padding:2vh 3vh 2vh 3vh;
-      background-color: #a59132;
-      border-radius:5px;
-      border-style: none;
-      cursor: pointer;
-     }
-    footer>#seconddiv{
-      height: 45vh;
-      width:77vw;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 2vh;
-      }
-      #seconddiv-firstchild{
-    
-    width:35vw;
-    display: flex;
-    flex-direction: column;
     gap: 2vh;
-      }
-      #icons-container{
-        height: 11vh;
-        width: 20vw;
-       
-      }
-      .social-iconlink > i {
-        font-size:3vh;
-        padding:2vh;
-        margin: 0.6vw;
-        color: white;
-        border:1px solid white;
-        border-radius: 50%;
-        transition: transform 0.5s;
-      }
-      .social-iconlink > i:hover {
-        color: #a59132;
-        transform: translateY(-5px);
-      }
-      #seconddiv-secondchild{
-        width: 10vw;
-        display: flex;
-        flex-direction: column;
-        gap: 2vh;
-      }
-      .footer-links{
-        text-decoration: none;
-        color: white;
-      }
-      .footer-links:hover{
-       color: #a59132;
-      }
-      #seconddiv-thirdchild{
-        width:28vw;
-        display: flex;
-        flex-direction: column;
-        gap: 2vh;
-      }
-      footer>#thirddiv{
-        background-color: #a59132;
-        height:5vh;
-        width:100vw;
-        font-size: 12px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-        }
+    }
+    #seconddiv-firstchild{
+  
+  width:35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+    }
+    #icons-container{
+      height: 11vh;
+      width: 22vw;
+  
      
-    /* footer css ends */
+    }
+    .social-iconlink>i {
+
+      font-size:3vh;
+      padding:2vh;
+      margin: 0.1;
+      color: white;
+      border:1px solid white;
+      border-radius: 50%;
+      transition: transform 0.5s;
+    }
+    .social-iconlink > i:hover {
+      color: #a59132;
+      transform: translateY(-5px);
+    }
+    #seconddiv-secondchild{
+      width: 10vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+    .footer-links{
+      text-decoration: none;
+      color: white;
+    }
+    .footer-links:hover{
+     color: #a59132;
+    }
+    #seconddiv-thirdchild{
+      width:28vw;
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+    footer>#thirddiv{
+      background-color: #a59132;
+      height:5vh;
+      width:100vw;
+      font-size: 12px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      }
+   
+  /* footer css ends */
+  
     
         /* Styles for the Scroll-to-Top Button  start*/
         #scrollToTopBtn {

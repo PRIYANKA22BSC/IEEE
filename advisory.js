@@ -1,3 +1,36 @@
+/*---active-link js start---*/
+const navLinks = document.querySelectorAll('.nav-links a');
+function setActiveLink(event) {
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+    event.target.classList.add('active-link');
+}
+navLinks.forEach(link => {
+    link.addEventListener('click', setActiveLink);
+});
+/*---active-link js end---*/
+
+/*---js start for toggling menu---*/
+
+function toggleMenu(){
+  let navlink=document.querySelector(".nav-links");
+  navlink.classList.toggle('show');
+ }
+
+/*---js end for toggling menu---*/
+
+/*--js for cross-icon starts--*/
+function cross(){
+  let navlink=document.querySelector(".nav-links");
+  navlink.classList.remove('show');
+}
+/*--js for cross-icon ends--*/
+
+
+
+
+
 /*--ADVISORY PAGE FIRST SECTION JS STARTS--*/
 
 /*--js for show more projects starts--*/
@@ -30,4 +63,48 @@ function project() {
   }
 }
 /*--js for show more projects ends--*/
+
+
+
+
+/*--scroll bottom to top btn js start--*/
+ // Select the button
+ const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+ // Show button when scrolled down 200px
+ window.addEventListener('scroll', () => {
+   if (window.scrollY > 200) {
+     scrollToTopBtn.style.display = 'block';
+   } else {
+     scrollToTopBtn.style.display = 'none';
+   }
+ });
+
+ // Scroll to the top when button is clicked
+ scrollToTopBtn.addEventListener('click', () => {
+   window.scrollTo({
+     top: 0,
+     behavior: 'smooth' // Smooth scrolling
+   });
+ });
+/*--scroll bottom to top btn js ends--*/
+
+
+/*--scroll top to bottom  btn js start--*/
+  // Select the button
+  const scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
+
+  // Scroll to the bottom when button is clicked
+  scrollToBottomBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: document.body.scrollHeight, // Scroll to the bottom
+      behavior: 'smooth' // Smooth scrolling
+    });
+  });
+/*--scroll top to bottom btn js ends--*/
+
+
+
+
+
 /*--ADVISORY PAGE FIRST SECTION JS ENDS--*/
