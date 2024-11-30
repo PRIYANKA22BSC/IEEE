@@ -622,8 +622,8 @@ gap: 2vh;
     /*--body css ends--*/
   /*-- Navbar section starts --*/
   #namelogo {
- font-size:15px;
-   margin:15vh 80vw 10vh -20vw;
+ font-size:10vh;
+   margin:20vh 100vw 10vh -80vw;
 }
   .nav-links {
     display: none;
