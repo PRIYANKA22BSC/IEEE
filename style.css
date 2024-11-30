@@ -615,9 +615,14 @@ gap: 2vh;
     /* Styles for the Scroll-to-Bottom Button ends */
 
 @media (max-width: 600px) {
+    /*--body css start--*/
+    body{
+         overflow-x: hidden;
+    }
+    /*--body css ends--*/
   /*-- Navbar section starts --*/
   #namelogo {
-   margin:10vh 40vw 0vh 10vw;
+   margin:10vh -10vw 5vh 10vw;
 }
   .nav-links {
     display: none;
