@@ -1,14 +1,27 @@
 /*---active-link js start---*/
 const navLinks = document.querySelectorAll('.nav-links a');
-function setActiveLink(event) {
+
+// Function to set the active link based on the current URL
+function updateActiveLink() {
+    const currentPath = window.location.pathname.split('/').pop(); // Get current file name
     navLinks.forEach(link => {
         link.classList.remove('active-link');
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active-link');
+        }
     });
-    event.target.classList.add('active-link');
 }
+
+// Update active link on page load
+updateActiveLink();
+
+// Also update when a link is clicked
 navLinks.forEach(link => {
-    link.addEventListener('click', setActiveLink);
+    link.addEventListener('click', () => {
+        updateActiveLink();
+    });
 });
+
 /*---active-link js end---*/
 
 /*---js start for toggling menu---*/
