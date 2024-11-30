@@ -622,7 +622,7 @@ gap: 2vh;
     /*--body css ends--*/
   /*-- Navbar section starts --*/
   #namelogo {
-   margin:10vh -10vw 5vh 10vw;
+   margin:10vh 10vw 8vh -5vw;
 }
   .nav-links {
     display: none;
@@ -672,3 +672,14 @@ gap: 2vh;
   }
   /*-- Navbar section ends --*/
 
+    /*--firstsection video css start--*/
+
+     #firstsection video {
+    height:100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    top:0px;
+    z-index: -1;
+  }
+/*--firstsection video css ends--*/
