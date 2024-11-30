@@ -619,9 +619,10 @@ gap: 2vh;
 @media (max-width: 600px) {
   /*-- Navbar section starts --*/
     
+ 
   #namelogo {
-  margin-left:1vw;
-      margin-top:2vh;
+    margin:4vw 0vw 0vw -5vw;
+  }
 }
   .nav-links {
     display: none;
