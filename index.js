@@ -1,5 +1,4 @@
 /*---active-link js start---*/
-
 const navLinks = document.querySelectorAll('.nav-links a');
 
 // Function to set the active link based on the current URL
@@ -24,6 +23,22 @@ navLinks.forEach(link => {
 });
 
 /*---active-link js end---*/
+
+/*---js start for toggling menu---*/
+
+function toggleMenu(){
+    let navlink=document.querySelector(".nav-links");
+    navlink.classList.toggle('show');
+   }
+
+/*---js end for toggling menu---*/
+
+/*--js for cross-icon starts--*/
+ function cross(){
+    let navlink=document.querySelector(".nav-links");
+    navlink.classList.remove('show');
+ }
+/*--js for cross-icon ends--*/
 
 /*---slider js start---*/
 const slider = document.querySelector('.slider');
