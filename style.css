@@ -23,7 +23,7 @@
     top: 0;
     z-index: 1000;
   }
-  #namelogo {
+  #namelogo{
     margin:4vw 0vw 0vw -5vw;
   }
   .nav-links {
@@ -621,9 +621,9 @@ gap: 2vh;
     }
     /*--body css ends--*/
   /*-- Navbar section starts --*/
-  #namelogo {
-
-margin:20vh 50vw 10vh 2vw;
+  #namelogo>img{
+    width:10vw;
+    margin:20vh 50vw 10vh 2vw;
 }
   .nav-links {
     display: none;
