@@ -34,6 +34,13 @@ function toggleMenu(){
 
 /*---js end for toggling menu---*/
 
+/*--js for cross-icon starts--*/
+function cross(){
+  let navlink=document.querySelector(".nav-links");
+  navlink.classList.remove('show');
+}
+/*--js for cross-icon ends--*/
+
 /*---slider js start---*/
 const slider = document.querySelector('.slider');
 const leftBtn = document.querySelector('.left-btn');

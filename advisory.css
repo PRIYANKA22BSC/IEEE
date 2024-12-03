@@ -553,9 +553,8 @@ gap: 2vh;
   height:6vh;
   margin-top:1vh;
    position: relative;
-  left:24vw;
+  left:29vw;
 }
-
 /*--THE FOLLOWING CSS OF PROJECT SECTION WILL APPLIED ON PROJECT-SECTION WHEN  CLICKED SEEMORE BUTTON---*/
 
 #project-section.height{
@@ -616,16 +615,18 @@ gap: 2vh;
       #footer-icons-container{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
         height: 11vh;
-        width:100vw;
+        width:77vw;
       }
       .social-iconlink > i {
-        font-size:1vh;
-        padding:1vh;
-        margin: 0.6vw;
+        font-size:1.5vh;
+        padding:2vh;
+        margin:2vw;
       }
       #seconddiv-secondchild{
-        margin-top:5vh;
+        margin-top:2vh;
         margin-bottom:-15vh;
         width:50vw;
         display: flex;
@@ -635,8 +636,8 @@ gap: 2vh;
     
       }
       #seconddiv-thirdchild{
-        margin-top:20vh;
-        margin-bottom: -15vh;
+        margin-top:15vh;
+        margin-bottom:10vh;
         width:50vw;
         display: flex;
         flex-direction: column;
@@ -645,7 +646,6 @@ gap: 2vh;
         gap:1vh;
       }
      
-      
       /* footer css ends */
     }
 
