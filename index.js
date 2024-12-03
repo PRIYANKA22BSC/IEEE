@@ -25,6 +25,15 @@ navLinks.forEach(link => {
 
 /*---active-link js end---*/
 
+/*---js start for toggling menu---*/
+
+function toggleMenu(){
+  let navlink=document.querySelector(".nav-links");
+  navlink.classList.toggle('show');
+ }
+
+/*---js end for toggling menu---*/
+
 /*---slider js start---*/
 const slider = document.querySelector('.slider');
 const leftBtn = document.querySelector('.left-btn');
