@@ -2,6 +2,7 @@
     margin:0px;
   }
   html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
@@ -647,6 +648,8 @@ gap: 2vh;
       
       /* footer css ends */
     }
+
+
 
 
     
