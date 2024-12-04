@@ -23,8 +23,18 @@
     top: 0;
     z-index: 1000;
   }
-  #namelogo {
+  /*#namelogo {
     margin:4vw 0vw 0vw -5vw;
+  }*/
+  #namelogo{
+    height:8vh;
+    margin:4vw 0vw 5vh 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #namelogo>img{
+    width:20vh;
   }
   .nav-links {
     margin-right: 7vw;
@@ -417,13 +427,13 @@ height:100vh;
           height: 10vh;
           z-index:1000;
         }
-        
         #namelogo{
           width:1vh;
         }
         #namelogo>img{
-          width:70vw;
-          margin:13vh 75vw 10vh -9vw;
+          width:30vw;
+          margin:10vh 0vw 5vh 20vw;
+        
         }
         .nav-links {
           display: none;
