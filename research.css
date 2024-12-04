@@ -178,8 +178,6 @@ height:100vh;
   top: 10vh;
 }
 #secondsection-leftdiv>h2 {
-
-  
   margin-top: 2vh;
 }
 #secondsection-leftdiv>p{
@@ -443,6 +441,7 @@ height:100vh;
           top: 1vh;
           left: 0;
           background-color: black;
+          opacity: 100%;
           width: 100%;
           height: 100vh;
           font-size:16px;
