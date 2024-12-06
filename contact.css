@@ -287,6 +287,21 @@ button > a {
   color: #a59132;
   transform: translateY(-5px);
 }
+#visit-link-div{
+  color: #fff;
+  margin-top:5vh;
+}
+#visit-us-link{
+  color: #a59132;
+  text-decoration: none;
+
+}
+#visit-us-div>a:hover{
+ color:#a59132;
+ cursor: pointer;
+ text-decoration: underline;
+
+}
 #form {
   color: white;
   display: flex;
@@ -425,6 +440,7 @@ footer > #thirddiv {
   justify-content: center;
   align-items: center;
 }
+
 
 /* footer css ends */
 
