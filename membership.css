@@ -718,7 +718,7 @@ margin:0vh 2vh 1vh 2vh
   /*--slider section div css start--*/
 
   #slider-section{
-    height:100vh;
+    height:90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -767,7 +767,7 @@ margin:0vh 2vh 1vh 2vh
  #secondsection-leftdiv { 
    width:80vw;
    height:70vh;
-   margin:-40vh 7vw 0vh 7vw;
+   margin:-80vh 7vw 0vh 7vw;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -784,7 +784,7 @@ margin:0vh 2vh 1vh 2vh
    display:block;
    width:80vw;
    height:30vh;
-   margin:4vh 7vw 0vh 7vw;
+   margin:-2vh 7vw 0vh 7vw;
  }
  #secondsection-rightdiv>img {
    height:100%;
@@ -796,7 +796,7 @@ margin:0vh 2vh 1vh 2vh
 
   /*--about section css starts--*/
 #about-section {
-height:100vh;
+height:55vh;
   margin-top:0vh;
   display: flex;
   flex-direction:column;
@@ -809,13 +809,13 @@ height:100vh;
   height:30vh;
   display: flex;
   flex-direction: column;
-  margin:-40vh 7vw 0vh 7vw;
+  margin:-80vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv{
   display:block;
   width:80vw;
   height:30vh;
-  margin:2vh 7vw 0vh 7vw;
+  margin:12vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv>h2{
   margin-top:2vh;
@@ -826,7 +826,6 @@ height:100vh;
  text-align: center;
 }
 /*--about section css ends--*/
-
     /* footer css start */
     footer{
       margin-top:20vh;
@@ -892,7 +891,6 @@ height:100vh;
           flex-direction:column;
           align-items: center;
           gap:0vh;
-      
         }
         #seconddiv-thirdchild{
           margin-top:15vh;
@@ -904,8 +902,6 @@ height:100vh;
           justify-content: center;
           gap:1vh;
         }
-       
-        
         /* footer css ends */
       }
   
