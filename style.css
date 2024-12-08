@@ -159,14 +159,14 @@ color: #fff;
   text-decoration: none;
   color: black;
 }
-#secondsection{
+#slider-section{
   background: linear-gradient(to top,#6f4518,black);
   height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#secondsection>p{
+#slider-section>p{
  margin-top:5vh;
  color:#a59132;
  font-family: "Satisfy";
@@ -174,7 +174,7 @@ color: #fff;
  font-style:italic;
  font-size:25px;
 }
-#secondsection>h2{
+#slider-section>h2{
   margin-top:5vh;
   color: white;
   text-align: center;
@@ -308,7 +308,6 @@ to {
   transform: scale(1);
 }
 }
-
 #project-section {
 background: linear-gradient(to top,white,black);
 height:85vh;
@@ -711,15 +710,15 @@ top:5vh;
 
  /*--firstsection div css ends--*/
 
-  /*--secondsection div css start--*/
+  /*--slider section div css start--*/
 
- #secondsection{
+ #slider-section{
   height:100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#secondsection>p{
+#slider-section>p{
  margin-top:5vh;
  color:#a59132;
  font-family: "Satisfy";
@@ -727,14 +726,14 @@ top:5vh;
  font-style:italic;
  font-size:25px;
 }
-#secondsection>h2{
+#slider-section>h2{
   margin:5vh 7vw 0vh 7vw;
   color: white;
   font-size:16px;
   text-align: center;
   
  }
- /*--secondsection div css ends--*/
+ /*--slider section div css ends--*/
  /*--slider css strt--*/
 .card {
   height:50vh;
