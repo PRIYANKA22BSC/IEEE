@@ -25,7 +25,6 @@ navLinks.forEach(link => {
 /*---active-link js end---*/
 
 /*---js start for toggling menu---*/
-
 function toggleMenu(){
   let navlink=document.querySelector(".nav-links");
   navlink.classList.toggle('show');
