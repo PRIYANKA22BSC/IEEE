@@ -209,6 +209,8 @@ color: #fff;
   height:65vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 .card-image {
   width: 100%;

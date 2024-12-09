@@ -237,7 +237,15 @@
         justify-content: center;
         align-items: center;
         }
-       /*--project section strt--*/
+
+        li{
+          font-size:12px;
+        margin-top: 2vh;
+        margin-right:2vw;
+        text-align: center;
+     
+        }
+       /*--project section ends--*/
 
        
   /*--secondsection div css start--*/
@@ -277,7 +285,7 @@
  color:#a59132;
  font-family: "Satisfy";
  font-weight: 400;
- font-style:italic;
+ font-style:normal;
  font-size:25px;
 }
 #slider-section>h2{
@@ -407,6 +415,27 @@ margin:0vh 2vh 1vh 2vh
    object-fit: cover;
    
  }
+ #join-btn{
+  background-color: transparent;
+  width: 12vw;
+  height: 8vh;
+ border: 1px solid #a59132;
+  color:#fff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5vh;
+}
+#join-btn:hover {
+  background-color:#a59132;
+  color: white;
+  border-style:none;
+  transition: 1s;
+}
+#join-btn-link {
+  text-decoration: none;
+  color: black;
+}
         /*--second section css ends--*/
 
 
@@ -457,6 +486,27 @@ margin:0vh 2vh 1vh 2vh
 
 #aboutsection-rightdiv>p{
  margin-top:5vh;
+}
+#abt-btn{
+  background-color: transparent;
+  width: 12vw;
+  height: 8vh;
+ border: 1px solid #a59132;
+  color:#fff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5vh;
+}
+#abt-btn:hover {
+  background-color:#a59132;
+  color: white;
+  border-style:none;
+  transition: 1s;
+}
+#abt-btn-link {
+  text-decoration: none;
+  color: black;
 }
 /*--about section css ends--*/
   
@@ -764,9 +814,9 @@ margin:0vh 2vh 1vh 2vh
   gap:2vh;
  height:150vh;
  }
- #secondsection-leftdiv { 
+ #secondsection-leftdiv {
    width:80vw;
-   height:70vh;
+   height:40vh;
    margin:-80vh 7vw 0vh 7vw;
    display: flex;
    flex-direction: column;
@@ -775,6 +825,7 @@ margin:0vh 2vh 1vh 2vh
  }
  #secondsection-leftdiv>h2 {
    margin-top: 2vh;
+   text-align: center;
  }
  #secondsection-leftdiv>p{
    margin-top:5vh;
@@ -784,7 +835,7 @@ margin:0vh 2vh 1vh 2vh
    display:block;
    width:80vw;
    height:30vh;
-   margin:-2vh 7vw 0vh 7vw;
+   margin:2vh 7vw 0vh 7vw;
  }
  #secondsection-rightdiv>img {
    height:100%;
@@ -792,6 +843,11 @@ margin:0vh 2vh 1vh 2vh
    object-fit: cover;
    
  }
+ #join-btn{
+  width:40vw;
+  height:6vh;
+  margin-top: 5vh;
+}
         /*--second section css ends--*/
 
   /*--about section css starts--*/
@@ -824,6 +880,12 @@ height:55vh;
 #aboutsection-rightdiv>p{
  margin-top:5vh;
  text-align: center;
+}
+#abt-btn{
+  width:40vw;
+  height:6vh;
+  margin-top: 5vh;
+  margin-left: 18vw;
 }
 /*--about section css ends--*/
     /* footer css start */
