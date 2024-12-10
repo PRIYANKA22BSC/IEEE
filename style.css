@@ -412,7 +412,7 @@ margin-top: 10vh;
 height:70vh;
 }
 #fifthsection-div{
-background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7)),url("images/joinbaner.jpeg");
+background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7)),url("images/join-team.jpg");
 background-position:center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -451,22 +451,22 @@ transform: translateY(-7px);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #circle1{
-background-image: url("images/join1.jpeg");
+background-image: url("images/award.jpg");
 background-size: cover;
 background-position: center;
 }
 #circle2{
-background-image: url("images/joinbanner.jpeg");
+background-image: url("images/stage1.jpg");
 background-size: cover;
 background-position: center;
 }
 #circle3{
-background-image: url("images/join4.jpeg");
+background-image: url("images/hall2.jpg");
 background-size: cover;
 background-position: center;
 }
 #circle4{
-background-image: url("images/boardroomcard.jpeg");
+background-image: url("images/global1.jpg");
 background-size: cover;
 background-position: center;
 }
