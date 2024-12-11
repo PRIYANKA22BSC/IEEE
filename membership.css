@@ -115,7 +115,6 @@
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7));
     height:100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   #firstsection img{
@@ -128,16 +127,15 @@
   }
  /* Animation Target */
  #firstsection-div {
-    height: 45vh;
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    opacity: 0; /* Start hidden */
-    transform: translateY(-50px); /* Start above the view */
-    transition: opacity 2s ease, transform 0.8s ease; /* Transition effect */
+  height: 45vh;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  margin-left:7vw;
+  color: #fff;
+  opacity: 0; /* Start hidden */
+  transform: translateY(-50px); /* Start above the view */
+  transition: opacity 2s ease, transform 0.8s ease; /* Transition effect */
   }
 
   #firstsection-div.visible {
@@ -152,7 +150,7 @@
 
   #firstsection-div > p {
     margin-top: 5vh;
-    text-align: center;
+    text-align: left;
   }
 
        /*--first section css ends--*/
@@ -274,7 +272,7 @@
  /*--secondsection div css ends--*/
 
  #slider-section{
-  background: linear-gradient(to top,#6f4518,black);
+
   height:100vh;
   display: flex;
   flex-direction: column;
@@ -375,7 +373,7 @@ margin:0vh 2vh 1vh 2vh
 
          /*--second section css starts--*/
 #secondsection {
-  background: linear-gradient(to top,rgba(117, 114, 114, 0.432),#6f4518);
+  
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -383,7 +381,8 @@ margin:0vh 2vh 1vh 2vh
  height:100vh;
  }
  #secondsection-leftdiv {
-   color:white;
+  border-radius: 15px;
+   color:black;
    width:45vw;
    height:65vh;
    display: flex;
@@ -395,22 +394,23 @@ margin:0vh 2vh 1vh 2vh
  }
  #secondsection-leftdiv>h2 {
    margin-top: 2vh;
-   
  }
  #secondsection-leftdiv>p{
    margin-top:5vh;
   }
  #secondsection-rightdiv{
-  color: white;
+  color:black;
    display:block;
    width:45vw;
    height:65vh;
+   border-radius:15px;
    margin-right:7vw;
    margin-top:13vh;
    position:relative;
    top: 10vh;
  }
  #secondsection-rightdiv>img {
+  border-radius: 15px;
    height:100%;
    width: 100%;
    object-fit: cover;
@@ -421,18 +421,13 @@ margin:0vh 2vh 1vh 2vh
   width: 12vw;
   height: 8vh;
  border: 1px solid #a59132;
-  color:#fff;
+  color:#a59132;
   border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
   margin-top: 5vh;
 }
-#join-btn:hover {
-  background-color:#a59132;
-  color: white;
-  border-style:none;
-  transition: 1s;
-}
+
 #join-btn-link {
   text-decoration: none;
   color: black;
@@ -448,14 +443,14 @@ margin:0vh 2vh 1vh 2vh
   font-weight: 400;
 }-*/
 #about-section {
-  background: linear-gradient(to top,#6f4518,rgba(117, 114, 114, 0.432));
+ 
   height:100vh;
   display: flex;
   flex-direction: row;
  gap: 2vw;
 }
 #aboutsection-leftdiv {
-  color:white;
+  color:black;
   width:45vw;
   height:65vh;
   display: flex;
@@ -468,11 +463,12 @@ margin:0vh 2vh 1vh 2vh
 #aboutsection-leftdiv>img {
   height:100%;
   width: 100%;
+  border-radius: 15px;
   object-fit: cover;
   
 }
 #aboutsection-rightdiv{
-  color:white;
+  color:black;
   display:block;
   width:45vw;
   height:65vh;
@@ -493,21 +489,15 @@ margin:0vh 2vh 1vh 2vh
   width: 12vw;
   height: 8vh;
  border: 1px solid #a59132;
-  color:#fff;
   border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
   margin-top: 5vh;
 }
-#abt-btn:hover {
-  background-color:#a59132;
-  color: white;
-  border-style:none;
-  transition: 1s;
-}
+
 #abt-btn-link {
   text-decoration: none;
-  color: black;
+
 }
 /*--about section css ends--*/
   
@@ -733,18 +723,24 @@ margin:0vh 2vh 1vh 2vh
         /*-- Navbar section ends --*/
 
 
-        /*--first section css start--*/
-#firstsection-div > h1 {
-  font-size: 6vh;
-  font-weight: 400;
-  text-align: center;
-}
+         /*--first section css start--*/
 
+         #firstsection-div {
+          margin-top:5vh;
+          width: 80vw;
+          height: 75vh;
+        }
+      
+#firstsection-div > h1 {
+  font-size:3vh;
+  font-weight: 400;
+  text-align: left;
+}
 #firstsection-div > p {
-  margin-top: 5vh;
+  margin-top:2vh;
   width:70vw;
   height:30vh;
-  text-align: center;
+  text-align:left;
   
 }
      /*--first section css ends--*/

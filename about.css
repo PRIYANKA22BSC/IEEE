@@ -7,6 +7,7 @@
   }
   body {
     font-family: Poppins;
+    background-color: rgba(240, 248, 255, 0.733);
   }
   /*--Navbar css starts--*/
   #navbar {
@@ -115,7 +116,6 @@
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7));
     height:100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   #firstsection img{
@@ -132,8 +132,7 @@
     width: 45vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left:7vw;
     color: #fff;
     opacity: 0; /* Start hidden */
     transform: translateY(-50px); /* Start above the view */
@@ -152,14 +151,15 @@
 
   #firstsection-div > p {
     margin-top: 5vh;
-    text-align: center;
+    text-align: left;
+
   }
 
        /*--first section css ends--*/
 
        /*--second section css starts--*/
 #secondsection {
-  background: linear-gradient(to top,rgba(117, 114, 114, 0.432),#6f4518);
+
  display: flex;
  flex-direction: row;
  justify-content:space-between;
@@ -167,7 +167,7 @@
 height:100vh;
 }
 #secondsection-leftdiv {
-  color:white;
+  color:black;
   width:45vw;
   height:65vh;
   display: flex;
@@ -186,7 +186,7 @@ height:100vh;
 
 
 #secondsection-rightdiv{
- color: white;
+ color: black;
   display:block;
   width:45vw;
   height:65vh;
@@ -196,6 +196,7 @@ height:100vh;
   top: 10vh;
 }
 #secondsection-rightdiv>img {
+  border-radius: 15px;
   height:100%;
   width: 100%;
   object-fit: cover;
@@ -212,7 +213,7 @@ height:100vh;
   font-weight: 400;
 }-*/
 #about-section {
-  background: linear-gradient(to top,rgba(117, 114, 114, 0.432),#6f4518  );
+  
   height:100vh;
   border-bottom: 1px solid grey;
   display: flex;
@@ -232,12 +233,13 @@ height:100vh;
   top: 10vh;
 }
 #aboutsection-leftdiv>img {
+  border-radius: 15px;
   height:100%;
   width: 100%;
   object-fit: cover; 
 }
 #aboutsection-rightdiv{
-  color: white;
+  color:black;
   display:block;
   width:45vw;
   height:65vh;
@@ -258,14 +260,13 @@ height:100vh;
 
 #my-service {
     text-align: center;
-    color: white;
+    color: black;
     margin-top:5vh;
   }
   
   #service-section {
     margin-top: -5vh;
     height:150vh;
-    background: linear-gradient(to bottom,#6f4518, white);
     display: flex;
     flex-direction:column;
     justify-content: space-evenly;
@@ -309,10 +310,11 @@ height:100vh;
    #project-heading{
     text-align: center;
     margin-top:5vh;
+    color: black;
    
   }
   #project-section {
-    background: linear-gradient(to bottom,#6f4518,white);
+   
     height:170vh;
     color: white;
     margin-top:0vh;
@@ -653,16 +655,23 @@ align-items: center;
 
 
         /*--first section css start--*/
+
+        #firstsection-div {
+          margin-top:5vh;
+          width: 80vw;
+          height: 75vh;
+        }
+      
 #firstsection-div > h1 {
-  font-size: 6vh;
+  font-size:3vh;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 #firstsection-div > p {
-  margin-top: 5vh;
+  margin-top:2vh;
   width:70vw;
   height:30vh;
-  text-align: center;
+  text-align:left;
   
 }
      /*--first section css ends--*/

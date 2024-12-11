@@ -160,7 +160,6 @@ color: #fff;
   color: black;
 }
 #slider-section{
-  background: linear-gradient(to top,#6f4518,black);
   height:100vh;
   display: flex;
   flex-direction: column;
@@ -176,7 +175,7 @@ color: #fff;
 }
 #slider-section>h2{
   margin-top:5vh;
-  color: white;
+  color: black;
   text-align: center;
   margin:0vh 2vw 0vh 2vw;
   
@@ -351,7 +350,6 @@ border-radius: 10px;
 transform: scale(1.1);
 }
 .project-layer {
-background: linear-gradient(to bottom, rgba(255, 0, 0, 0),#6f4518);
 text-align: center;
 height: 0;
 width: 100%;
@@ -412,7 +410,7 @@ margin-top: 10vh;
 height:70vh;
 }
 #fifthsection-div{
-background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7)),url("images/join-team.jpg");
+background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(30, 14, 4, 0.7)),url("images/teamm.jpg");
 background-position:center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -451,12 +449,12 @@ transform: translateY(-7px);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 #circle1{
-background-image: url("images/award.jpg");
+background-image: url("images/must.jpg");
 background-size: cover;
 background-position: center;
 }
 #circle2{
-background-image: url("images/stage1.jpg");
+background-image: url("images/meet4.jpg");
 background-size: cover;
 background-position: center;
 }
@@ -466,7 +464,7 @@ background-size: cover;
 background-position: center;
 }
 #circle4{
-background-image: url("images/global1.jpg");
+background-image: url("images/party4.jpg");
 background-size: cover;
 background-position: center;
 }
@@ -709,6 +707,7 @@ top:5vh;
   height:6vh;
   margin-top: 5vh;
 }
+
 
  /*--firstsection div css ends--*/
 
