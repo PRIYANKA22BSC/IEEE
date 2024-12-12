@@ -196,6 +196,7 @@ height:100vh;
   top: 10vh;
 }
 #secondsection-rightdiv>img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   height:100%;
   width: 100%;
@@ -233,6 +234,7 @@ height:100vh;
   top: 10vh;
 }
 #aboutsection-leftdiv>img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   border-radius: 15px;
   height:100%;
   width: 100%;
@@ -282,6 +284,7 @@ height:100vh;
     gap:2vw;
   }
   .services {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
     height: 55vh;
     width: 45vh;
     font-size: 14px;
@@ -336,9 +339,11 @@ height:100vh;
     display:none;
   }
   .project{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     height:60vh;
     width: 55vh;
     border-radius: 10px;
+    border-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -710,6 +715,7 @@ height:150vh;
   margin:4vh 7vw 0vh 7vw;
 }
 #secondsection-rightdiv>img {
+  
   height:100%;
   width: 100%;
   object-fit: cover;

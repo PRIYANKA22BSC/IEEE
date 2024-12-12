@@ -157,7 +157,7 @@
 
 /*--project section strt--*/
        #project-section {
-        background: linear-gradient(to top,white,#6f4518);
+        background: linear-gradient(to top,white,black);
         height:85vh;
         color: white;
         margin-top:0vh;
@@ -192,6 +192,7 @@
         width: 100%;
         height: 100%;
         border-radius: 10px; 
+        
         }
         .project-img:hover {
         transform: scale(1.1);
@@ -313,9 +314,7 @@
   width: 300px;
   margin: 10px;
   color: white;
-  font-size: 24px;
   text-align: center;
-  line-height: 150px;
   border-radius: 10px;
   flex-shrink: 0;
   height:65vh;
@@ -323,14 +322,9 @@
   flex-direction: column;
 }
 
-.card-image {
-  width: 100%;
-  height:80%;
-  border-radius: 10px; 
-  object-fit: cover;
-}
+
 .card-info{
-  margin-top:-8vh;
+  margin-top:2vh;
   height: 20%;
   display: flex;
   flex-direction:column;
@@ -339,11 +333,25 @@
 }
 .card-info>h6{
    height: 10%;
+   font-size: 20px;
 }
 .card-info>p{
 font-size:16px;
 height: 10%;
-margin:0vh 2vh 1vh 2vh
+margin:1vh 2vh 1vh 2vh;
+
+}
+.card-image {
+  width: 100%;
+  height:80%;
+  display: flex;
+  flex-direction: column;
+
+}
+.card-image>p{
+ text-align:left;
+margin-left: 2vw;
+font-size: 14px;
 }
 .nav-btn {
   position: absolute;
@@ -381,6 +389,7 @@ margin:0vh 2vh 1vh 2vh
  height:100vh;
  }
  #secondsection-leftdiv {
+  box-shadow: ;
   border-radius: 15px;
    color:black;
    width:45vw;
@@ -410,6 +419,7 @@ margin:0vh 2vh 1vh 2vh
    top: 10vh;
  }
  #secondsection-rightdiv>img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   border-radius: 15px;
    height:100%;
    width: 100%;
@@ -417,7 +427,7 @@ margin:0vh 2vh 1vh 2vh
    
  }
  #join-btn{
-  background-color: transparent;
+  background-color: #a59132;
   width: 12vw;
   height: 8vh;
  border: 1px solid #a59132;
@@ -461,6 +471,7 @@ margin:0vh 2vh 1vh 2vh
   top: 10vh;
 }
 #aboutsection-leftdiv>img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   height:100%;
   width: 100%;
   border-radius: 15px;
@@ -485,20 +496,20 @@ margin:0vh 2vh 1vh 2vh
  margin-top:5vh;
 }
 #abt-btn{
-  background-color: transparent;
+  background-color:  #a59132;
   width: 12vw;
   height: 8vh;
- border: 1px solid #a59132;
   border-radius: 25px;
+  border: 1px solid #a59132;
   cursor: pointer;
   font-size: 18px;
   margin-top: 5vh;
 }
-
 #abt-btn-link {
   text-decoration: none;
 
 }
+
 /*--about section css ends--*/
   
         /* footer css start */

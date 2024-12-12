@@ -168,7 +168,7 @@
       #project-section {
         
         height:85vh;
-        color: black;
+        color: white;
         margin-top:0vh;
       }
       #project-outer-container{
@@ -188,6 +188,7 @@
         display:none;
       }
       .project{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         height:60vh;
         width: 55vh;
         border-radius: 10px;
@@ -540,6 +541,7 @@ text-align:left;
   display:none;
 }
 .project {
+  
     height:50vh;
     width: 85vw;
     margin-left:2vw;
