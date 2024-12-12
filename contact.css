@@ -170,7 +170,6 @@ button > a {
 #service-section {
   margin-top: -5vh;
   height: 75vh;
-  background: linear-gradient(to bottom, #6f4518, white);
   display: flex;
   flex-direction:column;
   justify-content: space-evenly;
@@ -186,6 +185,7 @@ button > a {
   gap:2vw;
 }
 .services {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   height: 55vh;
   width: 45vh;
   font-size: 14px;
