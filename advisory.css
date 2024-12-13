@@ -163,6 +163,7 @@
       #project-heading{
         text-align: center;
         margin-top:5vh;
+        color: black;
        
       }
       #project-section {
@@ -207,7 +208,7 @@
         transform: scale(1.1);
       }
       .project-layer {
-        background: linear-gradient(to bottom, rgba(255, 0, 0, 0),#6f4518);
+        background: linear-gradient(to bottom, rgba(143, 138, 138, 0.712),black);
         text-align: center;
         height: 0;
         width: 100%;

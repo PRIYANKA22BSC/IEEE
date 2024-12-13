@@ -213,25 +213,26 @@ color: #fff;
 }
 .card-image {
   width: 100%;
-  height:80%;
+  height:90%;
   border-radius: 10px; 
   object-fit: cover;
 }
 .card-info{
   margin-top:-8vh;
-  height: 20%;
+  height: 10%;
   display: flex;
   flex-direction:column;
   gap: 2vh;
   color: #a59132;
 }
 .card-info>h6{
-   height: 10%;
+   height:5%;
+   margin-top: -5vh;
 }
 .card-info>p{
 font-size:16px;
-height: 10%;
-margin:0vh 2vh 1vh 2vh
+height: 5%;
+margin:1vh 2vh 1vh 2vh
 }
 .nav-btn {
   position: absolute;
@@ -310,7 +311,7 @@ to {
 }
 }
 #project-section {
-background: linear-gradient(to top,white,black);
+/*background: linear-gradient(to top,white,black);*/
 height:85vh;
 color: white;
 margin-top:0vh;
@@ -350,7 +351,7 @@ border-radius: 10px;
 transform: scale(1.1);
 }
 .project-layer {
-  background: linear-gradient(to bottom, rgba(255, 0, 0, 0),#6f4518);
+  background: linear-gradient(to bottom, rgba(143, 138, 138, 0.712),black);
 text-align: center;
 height: 0;
 width: 100%;
@@ -388,6 +389,47 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+/* automatic slider section strt*/
+.autoslider-container {
+  width:100%;
+  height:40vh;
+  margin-top:10vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.autoslider-track {
+  display: flex;
+  gap: 2vw;
+  animation: slide 20s linear infinite;
+}
+
+.autoslider {
+  width:30vw; /* Slide width */
+  height:40vh;
+  background-color: rgba(128, 121, 121, 0.466);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  font-weight: bold;
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Continuous scroll animation */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* automatic slider section ends*/
+
 /*-- fifth section css For Transition start--*/
 /* Initial state for elements (hidden and off-screen) */
 #fifthsection-div,
@@ -403,9 +445,7 @@ transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition for bot
 opacity: 1; /* Make elements visible */
 transform: translateY(0); /* Move elements into their original position */
 }
-
 /*-- fifth section css For Transition ends--*/
-
 #fifthsection{
 margin-top: 10vh;
 height:70vh;
@@ -769,6 +809,21 @@ margin:0vh 2vh 1vh 2vh
   width:35vh;
   }
   /*--project section css ends--*/
+
+
+  /*--autoslider section css strt--*/
+
+  .autoslider {
+    width:50vw; /* Slide width */
+    height:25vh;
+    /*flex-shrink: 0; *//* Prevent shrinking */
+  }
+  .autoslider-track {
+    
+    animation: slide 10s linear infinite;
+  }
+  
+  /*--auto slider section ends--*/
 
   /*--circle css start--*/
 

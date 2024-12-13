@@ -239,7 +239,6 @@ transition: opacity 2s ease, transform 0.8s ease; /* Transition effect */
 
        /*--second section css starts--*/
 #secondsection {
-
  display: flex;
  flex-direction: row;
  justify-content:space-between;
@@ -382,7 +381,6 @@ height:100vh;
    gap: 2vh;
    }
    #seconddiv-firstchild{
- 
  width:35vw;
  display: flex;
  flex-direction: column;

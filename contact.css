@@ -162,14 +162,15 @@ button > a {
 
 #my-service {
   text-align: center;
-  font-size: 25px;
-  color: white;
-  font-weight: 400;
+  margin-top: 10vh;
+  color: black;
+  font-weight:600;
+
 }
 
 #service-section {
   margin-top: -5vh;
-  height: 75vh;
+  height: 80vh;
   display: flex;
   flex-direction:column;
   justify-content: space-evenly;
@@ -189,8 +190,7 @@ button > a {
   height: 55vh;
   width: 45vh;
   font-size: 14px;
-  background-color: #111111a9;
-  color: white;
+  color: black;
   border-radius: 10px;
   transition: transform 0.5s;
   display: flex;
@@ -201,7 +201,6 @@ button > a {
 }
 
 .services:hover {
-  background-color: #6f4518;
   transform: translateY(-7px);
 }
 .services > i {

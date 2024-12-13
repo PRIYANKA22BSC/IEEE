@@ -198,7 +198,7 @@
         transform: scale(1.1);
         }
         .project-layer {
-        background: linear-gradient(to bottom, rgba(255, 0, 0, 0),#6f4518);
+        background: linear-gradient(to bottom, rgba(143, 138, 138, 0.712),black);
         text-align: center;
         height: 0;
         width: 100%;
@@ -246,140 +246,96 @@
         }
        /*--project section ends--*/
 
+
+       /*--offer section strt--*/
+       #offer-section {
+        height:85vh;
+        color: white;
+        margin-top:0vh;
+        }
+        #offer-heading{
+          color: black; 
+           text-align: center;
+          color: black;
+         
+        }
+        #offer-outer-container{
+        display: flex;
+        flex-direction:column;
+        }
+        #offer-container{
+        height: 70vh;
+        margin:6vh 7vw 0vh 7vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+        #offer-container2{   
+        display:none;
+        }
+        #offer1,#offer2,#offer3 {
+        height:40vh;
+        width: 55vh;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        }
+        .offer-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px; 
+        }
+        .offer-img:hover {
+        transform: scale(1.1);
+        }
+        .offer-layer {
+          height:100%;
+          width: 100%;
+          margin-top:2vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: height 0.5s;
+          }
+          .offer-layer>h3 {
+            position: relative;
+            
+            }
+        .offer-layer1 {
        
-  /*--secondsection div css start--*/
+        text-align: center;
+        height:0;
+        width: 100%;
+        margin-top:2vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: height 0.5s;
+        }
+      
+        .offer-description{
+          text-align: center;
+        }
+        .offer:hover .offer-layer {
+          height:0;
+          }
+     .offer:hover .offer-layer1{
+        height:80%;
+        }
+        
+       /*--offer section ends--*/
 
- #slider-section{
-  height:100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#slider-section>p{
- margin-top:5vh;
- color:#a59132;
- font-family: "Satisfy";
- font-weight: 400;
- font-style:italic;
- font-size:25px;
-}
-#slider-section>h2{
-  margin:5vh 7vw 0vh 7vw;
-  color: white;
-  font-size:16px;
-  text-align: center;
-  
- }
- /*--secondsection div css ends--*/
-
- #slider-section{
-
-  height:100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#slider-section>p{
- margin-top:5vh;
- color:#a59132;
- font-family: "Satisfy";
- font-weight: 400;
- font-style:normal;
- font-size:25px;
-}
-#slider-section>h2{
-  margin-top:7vh;
-  color: white;
-  text-align: center;
-  margin:0vh 2vw 0vh 2vw;
-  
- }
- .slider-container {
-  position: relative;
-  width: 100vw; 
-  max-width:80vw;
-  overflow: hidden;
-  margin-top:10vh;
-}
-.slider-wrapper {
-  overflow: hidden;
-  width: 80vw;
-}
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.card {
-  background-color: black;
-  width: 300px;
-  margin: 10px;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
-  flex-shrink: 0;
-  height:65vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.card-info{
-  margin-top:2vh;
-  height: 20%;
-  display: flex;
-  flex-direction:column;
-  gap: 2vh;
-  color: #a59132;
-}
-.card-info>h6{
-   height: 10%;
-   font-size: 20px;
-}
-.card-info>p{
-font-size:16px;
-height: 10%;
-margin:1vh 2vh 1vh 2vh;
-
-}
-.card-image {
-  width: 100%;
-  height:80%;
-  display: flex;
-  flex-direction: column;
-
-}
-.card-image>p{
- text-align:left;
-margin-left: 2vw;
-font-size: 14px;
-}
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 20px;
-  cursor: pointer;
-  z-index: 100;
-  border-radius: 50%;
-}
-.nav-btn.left-btn {
-  left: 10px;
-}
-.nav-btn.right-btn {
-  right: 10px;
-}
-.nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.nav-btn:disabled {
-  cursor: not-allowed;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-         /*--second section css starts--*/
 #secondsection {
   
   display: flex;
@@ -389,7 +345,7 @@ font-size: 14px;
  height:100vh;
  }
  #secondsection-leftdiv {
-  box-shadow: ;
+ 
   border-radius: 15px;
    color:black;
    width:45vw;
@@ -773,46 +729,23 @@ font-size: 14px;
   }
   /*--project section css ends--*/
 
-  /*--slider section div css start--*/
+  /*--offer section css start--*/
+#offer-section {
+  height:210vh;
+  margin-top:-6vh;
+  }
+  #offer-container{
+  height:210vh;
+  margin:0vh 7vw 0vh 7vw;
+  display: flex;
+  flex-direction:column;
+  }
+  #offer1,#offer2,#offer3 {
+    height:45vh;
+    width:35vh;
+    }
+  /*--offer section css ends--*/
 
-  #slider-section{
-    height:90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #slider-section>p{
-   margin-top:5vh;
-   color:#a59132;
-   font-family: "Satisfy";
-   font-weight: 400;
-   font-style:italic;
-   font-size:25px;
-  }
-  #slider-section>h2{
-    margin:5vh 7vw 0vh 7vw;
-    color: white;
-    font-size:16px;
-    text-align: center;
-    
-   }
-   /*--slider section div css ends--*/
-   /*--slider css strt--*/
-  .card {
-    height:50vh;
-  }
-  .card-info{
-    margin-top:-5vh;
-  }
-  .card-info>h6{
-     height: 10%;
-  }
-  .card-info>p{
-  font-size:16px;
-  height: 10%;
-  margin:0vh 2vh 1vh 2vh
-  }
-   /*--slider css ends--*/
    /*--second section css starts--*/
 #secondsection {
   display: flex;
