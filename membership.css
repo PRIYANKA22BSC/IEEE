@@ -54,7 +54,7 @@
     position: absolute;
     left: 0;
     bottom: 1px;
-    background-color: #124559;
+    background-color: #a59132;
     transition: width 0.3s ease;
   }
   .nav-links a:hover::after {
@@ -65,7 +65,7 @@
     position: absolute;
     left: 0;
     bottom: 1px;
-    background-color: #124559;
+    background-color: #a59132;
     transition: width 0.3s ease;
   }
   .nav-links a.active-link::after {
@@ -80,7 +80,7 @@
     background-color: transparent;
     width:10vw;
     height: 8vh;
-    border: 1px solid #124559;
+    border: 1px solid #a59132;
     color:#fff;
     border-radius: 25px;
     cursor: pointer;
@@ -88,7 +88,7 @@
     font-size: 18px;
   }
   #contact-btn:hover {
-    background-color:#124559;
+    background-color:#a59132;
     color: white;
     border-style:none;
     transition: 1s;
@@ -237,7 +237,7 @@
         }
         .project-link {
         text-decoration: none;
-        color: #124559;
+        color: #a59132;
         background-color: white;
         height: 5vh;
         width: 5vh;
@@ -357,9 +357,6 @@
         }
         
 
-
-
-
        /*--offer section ends--*/
 
 #secondsection {
@@ -428,11 +425,11 @@
    
  }
  #join-btn{
-  background-color: #124559;
+  background-color: #a59132;
   width: 12vw;
   height: 8vh;
- border: 1px solid #124559;
-  color:#124559;
+ border: 1px solid #a59132;
+  color:#a59132;
   border-radius: 25px;
   cursor: pointer;
   font-size: 18px;
@@ -554,11 +551,11 @@
  margin-top:5vh;
 }
 #abt-btn{
-  background-color:  #124559;
+  background-color:  #a59132;
   width: 12vw;
   height: 8vh;
   border-radius: 25px;
-  border: 1px solid #124559;
+  border: 1px solid #a59132;
   cursor: pointer;
   font-size: 18px;
   margin-top: 5vh;
@@ -606,7 +603,7 @@
  
  }
  footer>#firstdiv{
- border-bottom: 1px solid #124559;
+ border-bottom: 1px solid #a59132;
  height:15vh;
  width:77vw;
  display: flex;
@@ -622,7 +619,7 @@
  }
  #subscribe-btn{
    padding:2vh 3vh 2vh 3vh;
-   background-color: #124559;
+   background-color: #a59132;
    border-radius:5px;
    border-style: none;
    cursor: pointer;
@@ -657,7 +654,7 @@
      transition: transform 0.5s;
    }
    .social-iconlink > i:hover {
-     color: #124559;
+     color: #a59132;
      transform: translateY(-5px);
    }
    #seconddiv-secondchild{
@@ -671,7 +668,7 @@
      color: white;
    }
    .footer-links:hover{
-    color: #124559;
+    color: #a59132;
    }
    #seconddiv-thirdchild{
      width:28vw;
@@ -680,7 +677,7 @@
      gap: 2vh;
    }
    footer>#thirddiv{
-     background-color: #124559;
+     background-color: #a59132;
      height:5vh;
      width:100vw;
      font-size: 12px;
@@ -699,7 +696,7 @@
           position: fixed;
           bottom: 20px;
           right: 20px;
-          background-color: #124559;
+          background-color: #a59132;
           color: white;
           border: none;
           border-radius: 50%;
@@ -725,7 +722,7 @@
           position: fixed;
           bottom: 20px;
           right: 20px;
-          background-color: #124559;
+          background-color: #a59132;
           color: white;
           border: none;
           border-radius: 50%;

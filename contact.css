@@ -54,7 +54,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 1px;
-  background-color: #0F4C5C;
+  background-color: #a59132;
   transition: width 0.3s ease;
 }
 .nav-links a:hover::after {
@@ -65,7 +65,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 1px;
-  background-color: #0F4C5C;
+  background-color: #a59132;
   transition: width 0.3s ease;
 }
 .nav-links a.active-link::after {
@@ -80,7 +80,7 @@ button > a {
   background-color: transparent;
   width: 10vw;
   height: 8vh;
-  border: 1px solid #0F4C5C;
+  border: 1px solid #a59132;
   color: #fff;
   border-radius: 25px;
   cursor: pointer;
@@ -88,7 +88,7 @@ button > a {
   font-size: 18px;
 }
 #contact-btn:hover {
-  background-color: #0F4C5C;
+  background-color: #a59132;
   color: white;
   border-style: none;
   transition: 1s;
@@ -287,7 +287,7 @@ button > a {
   color:#fff;
 }
 #contact-icons-container > i:hover {
-  color: #0F4C5C;
+  color: #a59132;
   transform: translateY(-5px);
 }
 #visit-link-div{
@@ -295,12 +295,12 @@ button > a {
   margin-top:5vh;
 }
 #visit-us-link{
-  color: #0F4C5C;
+  color: #a59132;
   text-decoration: none;
 
 }
 #visit-us-div>a:hover{
- color:#0F4C5C;
+ color:#a59132;
  cursor: pointer;
  text-decoration: underline;
 
@@ -340,14 +340,14 @@ button > a {
   height: 8vh;
   margin-top: 4vh;
   border-style: none;
-  border: 1px solid #0F4C5C;
+  border: 1px solid #a59132;
   color: white;
   border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
 }
 #submit-btn:hover {
-  background-color: #0F4C5C;
+  background-color: #a59132;
 }
 /*--Contact section css ends--*/
 /* footer css start */
@@ -363,7 +363,7 @@ footer {
   gap: 2vh;
 }
 footer > #firstdiv {
-  border-bottom: 1px solid #0F4C5C;
+  border-bottom: 1px solid #a59132;
   height: 15vh;
   width: 77vw;
   display: flex;
@@ -378,7 +378,7 @@ footer > #firstdiv {
 }
 #subscribe-btn {
   padding: 2vh 3vh 2vh 3vh;
-  background-color: #0F4C5C;
+  background-color: #a59132;
   border-radius: 5px;
   border-style: none;
   cursor: pointer;
@@ -412,7 +412,7 @@ footer > #seconddiv {
   transition: transform 0.5s;
 }
 .social-iconlink > i:hover {
-  color: #0F4C5C;
+  color: #a59132;
   transform: translateY(-5px);
 }
 #seconddiv-secondchild {
@@ -426,7 +426,7 @@ footer > #seconddiv {
   color: white;
 }
 .footer-links:hover {
-  color: #0F4C5C;
+  color: #a59132;
 }
 #seconddiv-thirdchild {
   width: 28vw;
@@ -435,7 +435,7 @@ footer > #seconddiv {
   gap: 2vh;
 }
 footer > #thirddiv {
-  background-color: #0F4C5C;
+  background-color: #a59132;
   height: 5vh;
   width: 100vw;
   font-size: 12px;
@@ -454,7 +454,7 @@ footer > #thirddiv {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0F4C5C;
+  background-color: #a59132;
   color: white;
   border: none;
   border-radius: 50%;
@@ -479,7 +479,7 @@ footer > #thirddiv {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #0F4C5C;
+  background-color: #a59132;
   color: white;
   border: none;
   border-radius: 50%;

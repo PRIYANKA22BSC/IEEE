@@ -332,6 +332,17 @@ align-items: center;
 #project-container2{   
 display:none;
 }
+.project {
+  opacity: 0; /* Start hidden */
+  transform: translateY(50px); /* Slightly move out of position */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth transition */
+}
+
+.project.visible {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to its original position */
+}
+
 #advisory,#boardroom,#custom {
 height:60vh;
 width: 55vh;
@@ -341,18 +352,7 @@ flex-direction: column;
 justify-content: space-evenly;
 position: relative;
 overflow: hidden;
-  /* Initial state for animation */
-  opacity: 0;
-  transform: translateY(100px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-
-.scroll-effect.visible {
-  /* Final state when element is visible */
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 /*for transition css ends*/
 
@@ -422,7 +422,7 @@ align-items: center;
 .autoslider {
   width:30vw; /* Slide width */
   height:40vh;
-  background-color: rgba(128, 121, 121, 0.466);
+ background-color: #d3babae1;
   color: black;
   display: flex;
   justify-content: center;
@@ -432,6 +432,8 @@ align-items: center;
   border-radius: 10px;
   flex-shrink: 0; /* Prevent shrinking */
 }
+
+
 
 /* Continuous scroll animation */
 @keyframes slide {
@@ -499,6 +501,16 @@ justify-content: center;
 align-items: center;
 transition: transform 0.5s;
 }
+.circle {
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.8); /* Slightly smaller size */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+.circle.visible {
+  opacity: 1; /* Fade in */
+  transform: scale(1); /* Return to original size */
+}
+  
 .circle:hover{
 transform: translateY(-7px);
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
