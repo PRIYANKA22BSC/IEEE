@@ -101,7 +101,56 @@ document.addEventListener("DOMContentLoaded", () => {
     handleScroll();
   });
   
+/*project-js start*/
+document.addEventListener("DOMContentLoaded", () => {
+  const projects = document.querySelectorAll(".project");
 
+  const observerOptions = {
+    threshold: 0.3, // Trigger when 30% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Stop observing once the animation is applied
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  projects.forEach((project) => observer.observe(project));
+});
+
+/*project js ends*/
+
+/*offer section strt */
+document.addEventListener("DOMContentLoaded", () => {
+  const offers = document.querySelectorAll(".offer");
+
+  const observerOptions = {
+    threshold: 0.3, // Trigger when 30% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("visible");
+        }, index * 200); // Add delay for staggered effect (200ms between each)
+        observer.unobserve(entry.target); // Stop observing once animation is applied
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  offers.forEach((offer) => observer.observe(offer));
+});
+
+
+/*offer section ends*/
 
 
 

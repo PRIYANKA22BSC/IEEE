@@ -158,7 +158,7 @@ const observer = new IntersectionObserver((entries) => {
   
 observer.observe(irregularBlock);
 
-/*fifth section js start*/
+/*fifth section js start
 
 // Function to observe when the section comes into view
 const obs = new IntersectionObserver((entries, obs) => {
@@ -180,6 +180,39 @@ obs.observe(circles);
 
 
 /*fifth section js ends*/
+
+/*fifth section js start*/
+
+// Function to observe when the section comes into view
+const obs = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      if (entry.target.id === "fifthsection") {
+        // Add the 'visible' class to the fifth section when it's in view
+        entry.target.classList.add('visible');
+      } else if (entry.target.id === "circles-container") {
+        // Render circles one after another
+        const circles = entry.target.querySelectorAll('.circle');
+        circles.forEach((circle, index) => {
+          setTimeout(() => {
+            circle.classList.add('visible');
+          }, index * 200); // Staggered delay for each circle (200ms)
+        });
+      }
+      // Stop observing once the animation is triggered
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+
+// Observe the fifthsection and circles container
+const section = document.querySelector('#fifthsection');
+const circlesContainer = document.querySelector('#circles-container');
+obs.observe(section);
+obs.observe(circlesContainer);
+
+/*fifth section js ends*/
+
 
 
 /*--scroll bottom to top btn js start--*/
