@@ -115,6 +115,31 @@ checkButtonStatus();
 /*---slider js end---*/
 
 /*--third section js start--*/
+
+/*project-js start*/
+document.addEventListener("DOMContentLoaded", () => {
+  const projects = document.querySelectorAll(".project");
+
+  const observerOptions = {
+    threshold: 0.3, // Trigger when 30% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Stop observing once the animation is applied
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  projects.forEach((project) => observer.observe(project));
+});
+
+/*project js ends*/
+
 // Select the element to observe
 const irregularBlock = document.getElementById('new-irregular-block');
 

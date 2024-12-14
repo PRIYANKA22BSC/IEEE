@@ -114,9 +114,4 @@ function project() {
     });
   });
 /*--scroll top to bottom btn js ends--*/
-
-
-
-
-
 /*--ADVISORY PAGE FIRST SECTION JS ENDS--*/

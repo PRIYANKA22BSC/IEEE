@@ -363,6 +363,25 @@
  #secondsection-leftdiv>p{
    margin-top:5vh;
   }
+  /*transition*/
+#secondsection-leftdiv {
+  color: black;
+  display: block;
+  width: 45vw;
+  height: 65vh;
+  margin-left: 7vw;
+  margin-top: 13vh;
+  position: relative;
+  top: 10vh;
+  opacity: 0; /* Initial state: hidden */
+  transform: translateX(-50px); /* Start off-screen on the left */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#secondsection-leftdiv.scroll-active {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Move to the original position */
+}
  #secondsection-rightdiv{
   color:black;
    display:block;
@@ -397,6 +416,34 @@
 #join-btn-link {
   text-decoration: none;
   color: black;
+}
+
+/*transition cs*/
+#secondsection-rightdiv {
+  color: black;
+  display: block;
+  width: 45vw;
+  height: 65vh;
+  margin-right: 7vw;
+  margin-top: 13vh;
+  position: relative;
+  top: 10vh;
+  opacity: 0; /* Initial state: hidden */
+  transform: translateX(50px); /* Start off-screen on the right */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
+
+#secondsection-rightdiv.scroll-active {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Move to the original position */
+}
+
+#secondsection-rightdiv > img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
         /*--second section css ends--*/
 
@@ -434,6 +481,35 @@
   object-fit: cover;
   
 }
+
+/*transition*/
+#aboutsection-leftdiv {
+  color: black;
+  width: 45vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7vw;
+  margin-top: 13vh;
+  position: relative;
+  top: 10vh;
+  opacity: 0; /* Initial state: hidden */
+  transform: translateX(-50px); /* Start off-screen on the left */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+}
+
+#aboutsection-leftdiv.scroll-active {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Move to the original position */
+}
+
+#aboutsection-leftdiv > img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
 #aboutsection-rightdiv{
   color:black;
   display:block;
@@ -464,6 +540,27 @@
 #abt-btn-link {
   text-decoration: none;
 
+}
+
+
+/* for transition css*/
+#aboutsection-rightdiv {
+  color: black;
+  display: block;
+  width: 45vw;
+  height: 65vh;
+  margin-right: 7vw;
+  margin-top: 13vh;
+  position: relative;
+  top: 10vh;
+  opacity: 0; /* Initial state: hidden */
+  transform: translateX(50px); /* Start off-screen on the right */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#aboutsection-rightdiv.scroll-active {
+  opacity: 1; /* Fully visible */
+  transform: translateX(0); /* Move to the original position */
 }
 
 /*--about section css ends--*/
