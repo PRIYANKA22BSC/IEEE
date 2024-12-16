@@ -852,7 +852,7 @@
 #hero-btn{
   width:40vw;
   height:6vh;
-  margin-top:7vh;
+  margin-top:15vh;
 }
 
      /*--first section css ends--*/
@@ -908,7 +908,7 @@
  height:130vh;
  }
  #secondsection-leftdiv {
-  
+ 
    width:80vw;
    height:40vh;
    margin:-50vh 7vw 0vh 7vw;
@@ -945,7 +945,7 @@
 
   /*--about section css starts--*/
 #about-section {
-  
+
   height:130vh;
   margin-top:0vh;
   display: flex;
@@ -959,7 +959,7 @@
   height:30vh;
   display: flex;
   flex-direction: column;
-  margin:-30vh 7vw 0vh 7vw;
+  margin:-60vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv{
   display:block;
