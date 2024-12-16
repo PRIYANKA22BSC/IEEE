@@ -821,6 +821,7 @@ top:5vh;
 }
 .card-info>h6{
    height: 10%;
+   margin-top: -1vh;
    
 }
 .card-info>p{
