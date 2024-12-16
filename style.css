@@ -817,7 +817,7 @@ top:5vh;
 }
 .card-info>h6{
    height: 10%;
-   margin-top:1vh;
+   margin:1vh 0vh 1vh 0vh;
 }
 .card-info>p{
 font-size:16px;
