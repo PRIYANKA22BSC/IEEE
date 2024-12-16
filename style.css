@@ -814,10 +814,14 @@ top:5vh;
 }
 .card-info{
   margin-top:-5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .card-info>h6{
    height: 10%;
-   margin:1vh 0vh 1vh 0vh;
+   
 }
 .card-info>p{
 font-size:16px;
