@@ -680,7 +680,6 @@ footer>#thirddiv{
     background-color: black;
   }
   /* Styles for the Scroll-to-Bottom Button ends */
-
 @media (max-width: 600px) {
   /*--body css start--*/
   body{
@@ -804,14 +803,21 @@ top:5vh;
  }
  /*--slider section div css ends--*/
  /*--slider css strt--*/
+ #slider-section>h2{
+
+  color: black;
+
+  
+ }
 .card {
-  height:40vh;
+  height:50vh;
 }
 .card-info{
   margin-top:-5vh;
 }
 .card-info>h6{
    height: 10%;
+   margin-top:1vh;
 }
 .card-info>p{
 font-size:16px;
