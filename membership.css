@@ -157,7 +157,6 @@
 
 /*--project section strt--*/
        #project-section {
-        background: linear-gradient(to top,white,black);
         height:85vh;
         color: white;
         margin-top:0vh;
@@ -316,12 +315,11 @@
           transition: height 0.5s;
           }
           .offer-layer>h3 {
-            position: relative;
+          position: relative;
+            
             
             }
         .offer-layer1 {
-       
-        text-align: center;
         height:0;
         width: 100%;
         margin-top:2vh;
