@@ -412,13 +412,11 @@ align-items: center;
   overflow: hidden;
   position: relative;
 }
-
 .autoslider-track {
   display: flex;
   gap: 2vw;
   animation: slide 20s linear infinite;
 }
-
 .autoslider {
   width:30vw; /* Slide width */
   height:40vh;
@@ -432,9 +430,12 @@ align-items: center;
   border-radius: 10px;
   flex-shrink: 0; /* Prevent shrinking */
 }
-
-
-
+.autoslider-img {
+  height:100%;
+  width: 100%;
+  border-radius: 10px;
+ 
+}
 /* Continuous scroll animation */
 @keyframes slide {
   from {
