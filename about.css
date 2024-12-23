@@ -758,7 +758,7 @@ align-items: center;
 
         #firstsection-div {
           margin-top:5vh;
-          width:100vw;
+          width:100%;
           background-color: #a59132;
           height: 55vh;
         }
