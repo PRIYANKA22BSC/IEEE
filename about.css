@@ -768,6 +768,7 @@ align-items: center;
   text-align: left;
 }
 #firstsection-div > p {
+  background-color: aqua;
   margin-top:2vh;
   width:70vw;
   height:30vh;
