@@ -757,7 +757,7 @@ align-items: center;
         /*--first section css start--*/
 
         #firstsection-div {
-          margin-top:2vh;
+          margin-top:-3vh;
           width:100%;
           background-color: #a59132;
           height:75vh;
