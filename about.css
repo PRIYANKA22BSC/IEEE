@@ -758,9 +758,9 @@ align-items: center;
 
         #firstsection-div {
           margin-top:5vh;
-          width: 80vw;
+          width:100vw;
           background-color: #a59132;
-          height: 75vh;
+          height: 55vh;
         }
       
 #firstsection-div > h1 {
