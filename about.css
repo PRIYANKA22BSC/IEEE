@@ -129,7 +129,7 @@
  /* Animation Target */
  #firstsection-div {
     height: 45vh;
-    width: 45vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     margin-left:7vw;
@@ -758,8 +758,7 @@ align-items: center;
 
         #firstsection-div {
           margin-top:-3vh;
-          width:100%;
-          background-color: #a59132;
+          width:80vw;
           height:75vh;
         }
       
