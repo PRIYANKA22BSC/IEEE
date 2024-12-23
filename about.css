@@ -757,10 +757,10 @@ align-items: center;
         /*--first section css start--*/
 
         #firstsection-div {
-          margin-top:5vh;
+          margin-top:2vh;
           width:100%;
           background-color: #a59132;
-          height: 55vh;
+          height:75vh;
         }
       
 #firstsection-div > h1 {
