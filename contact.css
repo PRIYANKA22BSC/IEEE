@@ -156,6 +156,29 @@ button > a {
   text-align: center;
 }
 
+#hero-btn{
+  background-color: transparent;
+  width: 10vw;
+  padding:2vh;
+ border: 1px solid #a59132;
+  color:#fff;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5vh;
+}
+#hero-btn:hover {
+  background-color:#a59132;
+  color: white;
+  border-style:none;
+  transition: 1s;
+}
+#hero-btn-link {
+  text-decoration: none;
+  color: black;
+}
+
+
 /*--first section css ends--*/
 
 /*--Services section css start--*/
@@ -653,6 +676,12 @@ top:5vh;
   height:30vh;
   text-align: center;
 }
+#hero-btn{
+  width:40vw;
+  height:6vh;
+  margin-top:15vh;
+}
+
 /*--first section css ends--*/
 
   /* Services Section css  strt */
