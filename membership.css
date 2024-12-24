@@ -446,7 +446,7 @@
  }
  #secondsec-btn{
   background-color: #a59132;
-  width: 10vw;
+  width: 12vw;
   padding:2vh;
  border: 1px solid #a59132;
   color:#a59132;
@@ -455,6 +455,7 @@
   font-size: 18px;
   margin-top: 5vh;
 }
+
 
 #secondsec-btn-link {
   text-decoration: none;
