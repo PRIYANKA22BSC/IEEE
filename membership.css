@@ -401,7 +401,7 @@
    top: 10vh;
  }
  #secondsection-leftdiv>h2 {
-   margin-top: 2vh;
+   margin-top:2vh;
  }
  #secondsection-leftdiv>p{
    margin-top:5vh;
@@ -564,11 +564,11 @@
   top: 10vh;
 }
 #aboutsection-rightdiv>h2{
-  margin-top:5vh;
+  margin-top:0vh;
  }
 
 #aboutsection-rightdiv>p{
- margin-top:5vh;
+ margin-top:2vh;
 }
 #abt-btn{
   background-color:  #a59132;
