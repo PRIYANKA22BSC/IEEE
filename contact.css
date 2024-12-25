@@ -413,16 +413,16 @@ button > a {
   margin-top: 6vh;
 }
 #form input {
- 
+ background-color:rgba(224, 216, 216, 0.856);
   color: black;
-  padding: 1.5vh 0 1.5vh 1vh;
+  padding: 2vh 0 2vh 1vh;
   margin-top: 2vh;
   border-radius: 3px;
   font-size: 14px;
  border: none;
   outline: none;
 }
-#form textarea {
+/*#form textarea {
   background-color:rgba(209, 201, 201, 0.808);
   color: black;
   border-radius: 3px;
@@ -431,7 +431,7 @@ button > a {
   font-size: 14px;
   outline: none;
   border: none;
-}
+}*/
 .label-heading{
   margin-top: 2vh;
   font-weight: bold;
@@ -445,6 +445,7 @@ button > a {
   margin-top: 2vh;  
   display: flex;
   flex-direction:row;
+  gap: 1vw;
 }
 #submit-btn {
   width:44vw;
