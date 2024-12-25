@@ -73,6 +73,9 @@
     width: 72%;
     margin-left: 1vw;
   }
+  #contact-link{
+    display: none;
+  }
   button>a{
     text-decoration: none;
     color: #fff;
@@ -727,12 +730,14 @@ align-items: center;
         .nav-links.show {
           display: flex;
         }
-        
+        #contact-link{
+          display:block;
+        }
         .nav-links a.active-link::after {
           width: 75%;
           margin-left: 1vw;
         }
-        
+    
         .nav-links a:hover::after {
           content: "";
           width: 77%;

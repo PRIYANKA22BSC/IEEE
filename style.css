@@ -72,6 +72,9 @@ body {
   width: 72%;
   margin-left: 1vw;
 }
+#contact-link{
+  display: none;
+}
 button>a{
   text-decoration: none;
   color: #fff;
@@ -732,6 +735,9 @@ margin-top:10vh;
 .nav-links a:hover::after {
   content: "";
   width: 77%;
+}
+#contact-link{
+  display:block;
 }
 #menu-icon, #cross-icon {
   display: block; 
