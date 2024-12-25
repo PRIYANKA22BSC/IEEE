@@ -324,8 +324,7 @@ button > a {
 }
 
 #contact-section {
-
-  height: 220vh;
+  height: 280vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -334,9 +333,8 @@ button > a {
 }
 
 #contact-section-form {
-
   border-radius: 10px;
-  height:190vh;
+  height:230vh;
   width: 45vw;
   margin-right: 7vw;
   margin-top: 10vh;
@@ -408,7 +406,6 @@ button > a {
 
 }
 #form {
-  
   color:black;
   display: flex;
   flex-direction: column;
@@ -416,9 +413,9 @@ button > a {
   margin-top: 6vh;
 }
 #form input {
- background-color:rgba(209, 201, 201, 0.808);
+ 
   color: black;
-  padding: 3.5vh 0 3.5vh 1vh;
+  padding: 1.5vh 0 1.5vh 1vh;
   margin-top: 2vh;
   border-radius: 3px;
   font-size: 14px;
@@ -426,7 +423,6 @@ button > a {
   outline: none;
 }
 #form textarea {
-
   background-color:rgba(209, 201, 201, 0.808);
   color: black;
   border-radius: 3px;
