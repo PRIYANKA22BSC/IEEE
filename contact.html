@@ -14,6 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="contact.css" /> 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "PfmnjSTnYi8ItZCKB",
+  });
+})();
+</script> 
+
 </head>
 <body>
    <!--header strt-->
@@ -31,7 +42,7 @@
         <a href="contact.html" id="contact-link">Contact</a>
 
       </div>
-      <button id="contact-btn"><a href="#contact-section-form">Contact Us</a></button>
+      <button id="contact-btn"><a href="#contact-outer-section">Contact Us</a></button>
       <i class="fa-solid fa-bars"onclick="toggleMenu()" id="menu-icon"></i>
     </nav>
     <!--navbar ends-->
@@ -42,7 +53,7 @@
   </h1>
   <p>Becoming a member of M.O.D.I. Forum is easy. Simply apply through our online portal, and our team will guide you through the process. Whether you're an investor, business leader, or government official, M.O.D.I. Forum offers the perfect platform to engage with top-level stakeholders and drive meaningful change.
   </p>
-  <button id="hero-btn"><a href="#contact-section-form">Join Us</a></button>
+  <button id="hero-btn"><a href="#contact-outer-section">Join Us</a></button>
 </div>
 </section>
   <button id="scrollToBottomBtn"><i class="fa-solid fa-arrow-down"></i></button>
@@ -138,9 +149,9 @@
     </p><br>
     <p>Please fill out the form below to inquire about our membership options or to get more information.
     </p>
-      <form id="form">
+      <form id="form" onsubmit="sendMail(event)">
        <label class="label-heading">Name:</label> <input type="text" placeholder="Full Name" class="input" id="full-name" required>
-       <label class="label-heading">Company/Organisation Name:</label>  <input type="text" placeholder="Company/Organization Name" class="input" id="company-name" required>
+       <label class="label-heading">Company/Organisation Name:</label>  <input type="text" placeholder="Company/Organization Name" class="input" id="comp-name" required>
        <label class="label-heading">Official Email Address:
 </label> <input type="email" placeholder="Official Email Address" class="input" id="official-email" required>
        <label class="label-heading">Phone Number:</label> <input type="tel" placeholder="Phone Number" class="input" id="phone-number" required>
@@ -148,37 +159,37 @@
 
         <label class="label-heading">Membership Type:</label>
         <div class="checkbox-group1">
-          <label><input type="radio" name="membership-type" value="individual" required> Individual Membership</label>
-          <label><input type="radio" name="membership-type" value="sme"> Micro-to-Small Enterprises (SMEs) Membership</label>
-          <label><input type="radio" name="membership-type" value="corporate"> Medium to Large Corporations Membership</label>
+          <label><input type="radio" name="membership-type" value="individual" class="member-type" required> Individual Membership</label>
+          <label><input type="radio" name="membership-type" value="sme" class="member-type"> Micro-to-Small Enterprises (SMEs) Membership</label>
+          <label><input type="radio" name="membership-type" value="corporate" class="member-type"> Medium to Large Corporations Membership</label>
         </div>
         <label class="label-heading">Interest/Inquiry Type:</label>
         <div class="checkbox-group2">
-          <label><input type="checkbox" name="inquiry-type" value="general"> General Information</label>
-          <label><input type="checkbox" name="inquiry-type" value="membership"> Membership Inquiry</label>
-          <label><input type="checkbox" name="inquiry-type" value="events"> Event Participation</label>
-          <label><input type="checkbox" name="inquiry-type" value="investment"> Investment Opportunities</label>
-          <label><input type="checkbox" name="inquiry-type" value="partnerships"> Strategic Partnerships</label>
-          <label><input type="checkbox" name="inquiry-type" value="other"> Other (Please specify)</label>
+          <label><input type="checkbox" name="inquiry-type" value="general" class="inquiry-type"> General Information</label>
+          <label><input type="checkbox" name="inquiry-type" value="membership" class="inquiry-type"> Membership Inquiry</label>
+          <label><input type="checkbox" name="inquiry-type" value="events" class="inquiry-type"> Event Participation</label>
+          <label><input type="checkbox" name="inquiry-type" value="investment" class="inquiry-type"> Investment Opportunities</label>
+          <label><input type="checkbox" name="inquiry-type" value="partnerships" class="inquiry-type"> Strategic Partnerships</label>
+          <label><input type="checkbox" name="inquiry-type" value="other" class="inquiry-type"> Other (Please specify)</label>
         </div>
         <label class="label-heading">Would you like to receive our newsletter and updates?</label>
         <div class="checkbox-group3">
 
-          <label> <input type="radio" name="newsletter" value="yes" required> Yes  </label>
-          <label> <input type="radio" name="newsletter" value="no"> No  </label>
+          <label> <input type="radio" name="newsletter" value="yes" class="news-opt" required> Yes  </label>
+          <label> <input type="radio" name="newsletter" value="no" class="news-opt" > No  </label>
         </div>
 
         <label class="label-heading">Preferred Contact Method:</label>
         <div class="checkbox-group4">
-          <label><input type="radio" name="contact-method" value="email" required> Email</label>
-          <label><input type="radio" name="contact-method" value="phone"> Phone</label>
-          <label><input type="radio" name="contact-method" value="whatsapp"> WhatsApp</label>
+          <label><input type="radio" name="contact-method" value="email" class="contact-mth" required> Email</label>
+          <label><input type="radio" name="contact-method" value="phone" class="contact-mth"> Phone</label>
+          <label><input type="radio" name="contact-method" value="whatsapp" class="contact-mth"> WhatsApp</label>
         </div>
       <label class="label-heading">How did you hear about M.O.D.I.?
       </label>  <input type="text" placeholder="Write Here" class="input" id="hear-about" required>
-  
-
+      <!--<button id="submit-btn" type="submit" onclick="sendMail()">Submit</button>-->  
         <button id="submit-btn" type="submit">Submit</button>
+
       </form> 
     </div>
    </section>
@@ -247,99 +258,5 @@
      <!--scroll btn ends-->
 
 </body>
-<script>
-  /*---active-link js start---*/
-  const navLinks = document.querySelectorAll('.nav-links a');
-
-// Function to set the active link based on the current URL
-function updateActiveLink() {
-    const currentPath = window.location.pathname.split('/').pop(); // Get current file name
-    navLinks.forEach(link => {
-        link.classList.remove('active-link');
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active-link');
-        }
-    });
-}
-
-// Update active link on page load
-updateActiveLink();
-
-// Also update when a link is clicked
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        updateActiveLink();
-    });
-});
-
-/*---active-link js end---*/
-
-
-/*---js start for toggling menu---*/
-
-function toggleMenu(){
-    let navlink=document.querySelector(".nav-links");
-    navlink.classList.toggle('show');
-   }
-
-/*---js end for toggling menu---*/
-
-/*--js for cross-icon starts--*/
- function cross(){
-    let navlink=document.querySelector(".nav-links");
-    navlink.classList.remove('show');
- }
-/*--js for cross-icon ends--*/
-
-
-
-  /*-- transition js start for contact hero section--*/
-document.addEventListener("DOMContentLoaded", () => {
-  const sectionDiv = document.getElementById("firstsection-div");
-
-  // Add the 'visible' class to trigger the transition effect
-  setTimeout(() => {
-    sectionDiv.classList.add("visible");
-  }, 100); // Delay for smoother effect
-});
-/*-- transition js ends for  contact section --*/
-
-/*--scroll bottom to top btn js start--*/
- // Select the button
- const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
- // Show button when scrolled down 200px
- window.addEventListener('scroll', () => {
-   if (window.scrollY > 200) {
-     scrollToTopBtn.style.display = 'block';
-   } else {
-     scrollToTopBtn.style.display = 'none';
-   }
- });
-
- // Scroll to the top when button is clicked
- scrollToTopBtn.addEventListener('click', () => {
-   window.scrollTo({
-     top: 0,
-     behavior: 'smooth' // Smooth scrolling
-   });
- });
-/*--scroll bottom to top btn js ends--*/
-
-
-/*--scroll top to bottom  btn js start--*/
-  // Select the button
-  const scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
-
-  // Scroll to the bottom when button is clicked
-  scrollToBottomBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: document.body.scrollHeight, // Scroll to the bottom
-      behavior: 'smooth' // Smooth scrolling
-    });
-  });
-/*--scroll top to bottom btn js ends--*/
-
-
-</script>
+<script src="contact.js"></script>
 </html>
