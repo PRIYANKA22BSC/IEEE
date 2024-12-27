@@ -375,6 +375,10 @@ button > a {
 .email > i {
   color: black;
 }
+.whatsapp-link{
+  text-decoration: none;
+  color: black;
+}
 #contact-icons-container>i {
   font-size: 4vh;
   margin-right: 2vw;
