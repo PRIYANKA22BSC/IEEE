@@ -300,9 +300,9 @@ button > a {
 
 /* Back Face Styling */
 .service-back {
-  background-color: rgba(255, 166, 0, 0.76); /* Orange background */
-  color: white;
-  transform: rotateY(180deg); /* Ensure the back face is rotated */
+  background-color:azure;
+  color: black;
+  transform: rotateY(180deg); 
 }
 .service-front>i {
   font-size:8vh;
