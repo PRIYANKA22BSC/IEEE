@@ -268,6 +268,7 @@ height:100vh;
  }
  /*transition*/
 #secondsection-leftdiv {
+
   color: black;
   display: block;
   width: 45vw;
@@ -305,6 +306,7 @@ height:100vh;
 }
 /*transition cs*/
 #secondsection-rightdiv {
+ 
   color: black;
   display: block;
   width: 45vw;
