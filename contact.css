@@ -343,8 +343,7 @@ button > a {
   padding-right: 2vh;
 }
 #contact-section-leftdiv {
- 
-  color: black;
+   color: black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -365,8 +364,14 @@ button > a {
   font-size: 14px;
 }
 #contact-icons-container {
-  width: 14vw;
-  height: 5vh;
+
+  width: 18vw;
+  height: 10vh;
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  
 }
 .email {
   margin-top: 2vh;
@@ -379,17 +384,24 @@ button > a {
   text-decoration: none;
   color: black;
 }
-#contact-icons-container>i {
-  font-size: 4vh;
-  margin-right: 2vw;
-  margin-top: 3.5vh;
-  color: black;
-  cursor: pointer;
-  transition: transform 0.5s;
+.contact-icons {
+ 
+   
+  font-size:3vh;
+  height:8vh;
+  width: 8vh;
+  margin: 0.1;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+
 }
 #contact-icons-container > a {
   text-decoration: none;
-  color:black;
+  color:white;
 }
 #contact-icons-container > i:hover {
   color: #a59132;
@@ -516,6 +528,7 @@ footer > #seconddiv {
   gap: 2vh;
 }
 #footer-icons-container{
+ 
   height: 11vh;
   width: 20vw;
  
