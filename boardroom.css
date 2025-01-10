@@ -709,16 +709,16 @@ height:150vh;
 }
 #secondsection-leftdiv { 
   width:80vw;
-  height:70vh;
+  height:65vh;
   margin:-20vh 7vw 0vh 7vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#secondsection-leftdiv>h2 {
+/*#secondsection-leftdiv>h2 {
   margin-top: 2vh;
-}
+}*/
 #secondsection-leftdiv>p{
   margin-top:5vh;
   text-align: center;
