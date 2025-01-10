@@ -747,13 +747,13 @@ text-align: center;
  height: 135vh;
  
 }
-/*#aboutsection-leftdiv {
+#aboutsection-leftdiv {
   width:80vw;
   height:30vh;
-  display: flex;
+  /*display: flex;
   flex-direction: column;
-  margin:0vh 7vw 0vh 7vw;
-}*/
+  margin:0vh 7vw 0vh 7vw;*/
+}
 #aboutsection-rightdiv{
   display:block;
   width:80vw;
