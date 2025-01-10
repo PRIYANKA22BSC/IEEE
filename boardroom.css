@@ -699,16 +699,14 @@ height:100vh;
 
        /*--second section css starts--*/
 #secondsection {
-background-color: red;
  display: flex;
  flex-direction:column;
  justify-content:center;
  align-items: center;
  gap:2vh;
-height:130vh;
+height:135vh;
 }
 #secondsection-leftdiv { 
-  background-color: blueviolet;
   width:80vw;
   height:75vh;
   margin:0vh 7vw 0vh 7vw;
@@ -718,7 +716,7 @@ height:130vh;
   align-items: center;
 }
 #secondsection-leftdiv>h2 {
-  margin-top:0vh;
+text-align: center;
 }
 #secondsection-leftdiv>p{
   margin-top:3vh;
@@ -747,6 +745,7 @@ height:130vh;
   justify-content: center;
   align-items: center;
  gap: 2vw;
+ height: 135vh;
 }
 #aboutsection-leftdiv {
   width:80vw;
