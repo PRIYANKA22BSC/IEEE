@@ -1027,6 +1027,9 @@ height:150vh;
           justify-content: center;
           gap:1vh;
         }
+        #address{
+          text-align: center;
+        }
        
         
         /* footer css ends */
