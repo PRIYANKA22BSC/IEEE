@@ -746,15 +746,19 @@ text-align: center;
   align-items: center;
  gap: 2vw;
  height: 135vh;
+ 
 }
 #aboutsection-leftdiv {
   width:80vw;
   height:30vh;
   display: flex;
   flex-direction: column;
-  margin:0vh 7vw 0vh 7vw;
-  position: relative;
-  top:0vh;
+  /*margin:0vh 7vw 0vh 7vw;*/
+  margin: 0vh 7vw;
+  margin-top: 5vh; /* Add margin-top for spacing */
+  position: relative; /* Ensure position remains consistent */
+  top: 0;
+
  
 }
 #aboutsection-rightdiv{
