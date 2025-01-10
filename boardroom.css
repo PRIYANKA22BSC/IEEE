@@ -708,6 +708,7 @@ background-color: red;
 height:150vh;
 }
 #secondsection-leftdiv { 
+  background-color: blueviolet;
   width:80vw;
   height:65vh;
   margin:-20vh 7vw 0vh 7vw;
