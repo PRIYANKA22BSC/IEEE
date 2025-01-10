@@ -455,6 +455,8 @@
   cursor: pointer;
   font-size: 18px;
   margin-top: 5vh;
+
+  
 }
 #secondsec-btn-link {
   text-decoration: none;
@@ -571,11 +573,12 @@
  margin-top:2vh;
 }
 #abt-btn{
-  background-color:  #a59132;
+  background-color: #a59132;
   width: 12vw;
-  height: 8vh;
+  padding:2vh;
+ border: 1px solid #a59132;
+  color:#a59132;
   border-radius: 25px;
-  border: 1px solid #a59132;
   cursor: pointer;
   font-size: 18px;
   margin-top: 5vh;
@@ -915,7 +918,7 @@
   background-color: red;
    width:80vw;
    height:40vh;
-   margin:-50vh 7vw 0vh 7vw;
+   margin:5vh 7vw 0vh 7vw;
    display: flex;
    flex-direction: column;
    justify-content: center;
