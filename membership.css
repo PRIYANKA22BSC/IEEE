@@ -957,7 +957,6 @@ text-align: center;
 #about-section {
 background-color: chartreuse;
   height:135vh;
-  margin-top:0vh;
   display: flex;
   flex-direction:column;
   justify-content:flex-start;
@@ -969,7 +968,7 @@ background-color: chartreuse;
   height:30vh;
   display: flex;
   flex-direction: column;
-  margin:-60vh 7vw 0vh 7vw;
+  margin:3vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv{
   background-color: darkgoldenrod;
