@@ -699,7 +699,7 @@ height:100vh;
 
        /*--second section css starts--*/
 #secondsection {
-background-color: aqua;
+background-color: red;
  display: flex;
  flex-direction:column;
  justify-content:center;
