@@ -856,6 +856,7 @@
   width:40vw;
   height:6vh;
   margin-top:15vh;
+  text-align: center;
 }
 
      /*--first section css ends--*/
@@ -945,6 +946,7 @@
   height:6vh;
   margin-top: 8vh;
   margin-left:4vw;
+text-align: center;
 }
 /*--second section css ends--*/
 
@@ -955,7 +957,7 @@
   margin-top:0vh;
   display: flex;
   flex-direction:column;
-  justify-content: center;
+  justify-content:flex-start;
   align-items: center;
  gap: 2vw;
 }

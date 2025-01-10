@@ -737,7 +737,7 @@ text-align: center;
 
   /*--about section css starts--*/
 #about-section {
-  background-color: aqua;
+ 
   margin-top:0vh;
   display: flex;
   flex-direction:column;
