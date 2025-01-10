@@ -903,7 +903,7 @@
 
    /*--second section css starts--*/
 #secondsection {
- 
+ background-color: blue;
   display: flex;
   flex-direction:column;
   justify-content:center;
@@ -912,7 +912,7 @@
  height:130vh;
  }
  #secondsection-leftdiv {
- 
+  background-color: red;
    width:80vw;
    height:40vh;
    margin:-50vh 7vw 0vh 7vw;
@@ -952,8 +952,8 @@ text-align: center;
 
   /*--about section css starts--*/
 #about-section {
-
-  height:130vh;
+background-color: chartreuse;
+  height:135vh;
   margin-top:0vh;
   display: flex;
   flex-direction:column;
@@ -969,6 +969,7 @@ text-align: center;
   margin:-60vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv{
+  background-color: darkgoldenrod;
   display:block;
   width:80vw;
   height:30vh;
