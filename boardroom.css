@@ -839,6 +839,7 @@ height:150vh;
         }
         #seconddiv-thirdchild{
           margin-top:15vh;
+          font-size: 12px;
           margin-bottom:10vh;
           width:70vw;
           display: flex;
