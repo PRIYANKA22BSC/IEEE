@@ -906,7 +906,7 @@
 
    /*--second section css starts--*/
 #secondsection {
- background-color: blue;
+ 
   display: flex;
   flex-direction:column;
   justify-content:flex-start;
@@ -955,7 +955,7 @@ text-align: center;
 
   /*--about section css starts--*/
 #about-section {
-background-color: chartreuse;
+
   height:135vh;
   display: flex;
   flex-direction:column;
@@ -968,10 +968,10 @@ background-color: chartreuse;
   height:30vh;
   display: flex;
   flex-direction: column;
-  margin:3vh 7vw 0vh 7vw;
+  margin:0vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv{
-  background-color: darkgoldenrod;
+
   display:block;
   width:80vw;
   height:30vh;
