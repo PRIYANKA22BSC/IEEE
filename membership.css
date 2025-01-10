@@ -956,7 +956,7 @@ text-align: center;
   /*--about section css starts--*/
 #about-section {
 
-  height:135vh;
+  height:140vh;
   display: flex;
   flex-direction:column;
   justify-content:flex-start;
