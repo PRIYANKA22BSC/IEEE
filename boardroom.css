@@ -357,7 +357,6 @@ height:100vh;
   margin-left: 7vw;
   margin-top: 13vh;
   position:relative;
-  top: 10vh;
 }
 #aboutsection-leftdiv>img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -753,11 +752,8 @@ text-align: center;
   height:30vh;
   display: flex;
   flex-direction: column;
-  /*margin:0vh 7vw 0vh 7vw;*/
-  margin: 0vh 7vw;
-  margin-top: 5vh; /* Add margin-top for spacing */
-  position: relative; /* Ensure position remains consistent */
-  top: 0;
+  margin:0vh 7vw 0vh 7vw;
+ 
 
  
 }
@@ -857,8 +853,8 @@ text-align: center;
         }
        
         
-        /* footer css ends */
+        
       }
-  
+  /* footer css ends */
   
       
