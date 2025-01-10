@@ -750,9 +750,7 @@ text-align: center;
 #aboutsection-leftdiv {
   width:80vw;
   height:30vh;
-  /*display: flex;
-  flex-direction: column;
-  margin:0vh 7vw 0vh 7vw;*/
+  margin-top:-5vh;
 }
 #aboutsection-rightdiv{
   display:block;
