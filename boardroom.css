@@ -716,11 +716,11 @@ height:150vh;
   justify-content: center;
   align-items: center;
 }
-/*#secondsection-leftdiv>h2 {
-  margin-top: 2vh;
-}*/
+#secondsection-leftdiv>h2 {
+  margin-top:0vh;
+}
 #secondsection-leftdiv>p{
-  margin-top:5vh;
+  margin-top:3vh;
   text-align: center;
  }
 #secondsection-rightdiv{
