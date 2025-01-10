@@ -754,8 +754,8 @@ text-align: center;
   flex-direction: column;
   margin:0vh 7vw 0vh 7vw;
   position: relative;
-  top:-10vh;
-  background-color: brown;
+  top:-5vh;
+ 
 }
 #aboutsection-rightdiv{
   display:block;
