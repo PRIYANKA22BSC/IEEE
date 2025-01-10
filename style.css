@@ -423,7 +423,6 @@ align-items: center;
 .autoslider {
   width:30vw; /* Slide width */
   height:40vh;
- background-color: #d3babae1;
   color: black;
   display: flex;
   justify-content: center;
@@ -773,7 +772,8 @@ top:5vh;
     color: #fff;
 }
 #firstsection-div>h1 {
-  font-weight: 400;
+  font-weight:300;
+  font-size: 20px;
 }
 #join-btn{
   width:40vw;
@@ -903,6 +903,11 @@ background-color:#fff;
   width:10vh;
   }
    /*--circle css ends--*/
+
+   /*scroll btn*/
+   #scrollToTopBtn{
+    z-index:1;
+   }
 /* footer css start */
 footer{
   margin:0 !important;
@@ -969,6 +974,7 @@ footer{
 
   }
   #seconddiv-thirdchild{
+    background-color: blue;
     margin-top:15vh;
     margin-bottom:10vh;
     width:70vw;
@@ -977,6 +983,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap:1vh;
+    
   }
  
   
