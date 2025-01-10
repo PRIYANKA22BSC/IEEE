@@ -753,8 +753,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   margin:0vh 7vw 0vh 7vw;
-  position: relative;
-  bottom: 10px;
+
  
 }
 #aboutsection-rightdiv{
