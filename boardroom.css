@@ -752,7 +752,7 @@ text-align: center;
   height:30vh;
   display: flex;
   flex-direction: column;
-  margin:0vh 7vw 0vh 7vw;
+  margin:-3vh 7vw 0vh 7vw;
 }
 #aboutsection-rightdiv{
   display:block;
